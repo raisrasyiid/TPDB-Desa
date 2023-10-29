@@ -6,8 +6,8 @@ class Main extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('home/layout/header');
-		$this->load->view('home/layout/menu');
-		$this->load->view('home/layout/footer');
+		$this->load->view('landingPage/layout/header');
+		$this->load->view('landingPage/layout/menu');
+		$this->load->view('landingPage/layout/footer');
 	}
 }
