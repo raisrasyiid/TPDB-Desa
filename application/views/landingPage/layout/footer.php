@@ -1,10 +1,10 @@
   <!-- Footer Start -->
-  <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+  <div class="container-fluid footer bg-success wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <a href="index.html">
-                            <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                            <h1 class="text-white fw-bold d-block">Sidigi<span class="text-secondary">Des</span> </h1>
                         </a>
                         <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
                         <div class="d-flex hightech-link">

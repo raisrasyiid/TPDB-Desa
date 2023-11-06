@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                         <h5 class="text-primary">Tentang Kami</h5>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
+                        <h1 class="mb-4">Best IT Solutions for Village</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
                         <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
                         <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
@@ -186,7 +186,7 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-6.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">keyword Research</h4>
@@ -212,7 +212,7 @@
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                 <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
                                 <span class="text-secondary">24 March 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="<?php echo base_url('assets/promosi/img/blog-2.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                 <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
@@ -261,7 +261,7 @@
                                 </div>
                             </div>
                             <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
                                 <span class="text-secondary">23 April 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
@@ -274,7 +274,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="<?php echo base_url('assets/promosi/img/blog-3.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                 <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
@@ -292,7 +292,7 @@
                                 </div>
                             </div>
                             <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
                                 <span class="text-secondary">30 jan 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
@@ -496,9 +496,71 @@
 
         <!-- Testimonial End -->
 
+        <!-- Accordion Start -->
+        <div class="container-fluid py-5 mb-5">
+            <div class="container">
+                <h1 class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">Frequently asked questions</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion End -->
+
+        <!-- DEMO Start -->
+        <div class="container-fluid py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h1 class="mb-3">Tertarik Menggunakan Sidigides?</h1>
+                    <div class="d-grid gap-2 d-md-block mt-4">
+                        <a href="#" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
+                        <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+        <!-- DEMO End -->
+
 
         <!-- Contact Start -->
-        <div class="container-fluid py-5 mb-5">
+        <!-- <div class="container-fluid py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Get In Touch</h5>
@@ -569,5 +631,7 @@
                     </div>
                 </div>
             </div> 
-        </div>
+        </div> -->
         <!-- Contact End -->
+
+       
