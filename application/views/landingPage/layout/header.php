@@ -49,9 +49,12 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="#" id="" class="nav-item nav-link active text-secondary">Beranda</a>
                             <a href="#tentangKami" class="nav-item nav-link">Tentang Kami</a>
-                            <a href="#" class="nav-item nav-link">Artikel</a>
-                            <a href="#" class="nav-item nav-link">Tim Kami</a>
-                            <a href="#" class="nav-item nav-link">Mitra</a>
+                            <a href="#project" class="nav-item nav-link">Project</a>
+                            <a href="#artikel" class="nav-item nav-link">Artikel</a>
+                            <a href="#tim" class="nav-item nav-link">Tim</a>
+                            <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                            <a href="#faq" class="nav-item nav-link">FAQ</a>
+                            <a href="#mitra" class="nav-item nav-link">Mitra</a>
                             
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>
@@ -101,8 +104,8 @@
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">Buat Sistem Desa Anda Lebih Modern</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Dengan adanya Sidigides anda dapat lebih mudah dalam mengelola desa anda.</p>
-                                <a href="#" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
-                                <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
+                                <a href="#" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
+                                <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
                         </div>
                     </div>
@@ -113,8 +116,8 @@
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
+                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
                         </div>
                     </div>

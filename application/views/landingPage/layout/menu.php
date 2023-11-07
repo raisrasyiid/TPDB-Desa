@@ -1,6 +1,6 @@
   <!-- About Start -->
-  <div class="container-fluid py-5 my-5" id="tentangKami">
-            <div class="container pt-5">
+  <div class="container-fluid py-5 my-5">
+            <div class="container pt-5" id="tentangKami">
                 <div class="row g-5">
                     <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="h-100 position-relative">
@@ -111,17 +111,17 @@
 
 
         <!-- Project Start -->
-        <div class="container-fluid project py-5 mb-5">
+        <div class="container-fluid project py-5 mb-5" id="project">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Project</h5>
-                    <h1>Our Recently Completed Projects</h1>
+                    <h5 class="text-primary">Project</h5>
+                    <h1>Project Yang Pernah Kami Kerjakan</h1>
                 </div>
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-1.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Web design</h4>
@@ -134,7 +134,7 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-2.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Cyber Security</h4>
@@ -147,7 +147,7 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-3.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Mobile Info</h4>
@@ -160,7 +160,7 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-4.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Web Development</h4>
@@ -173,7 +173,7 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/project-5.jpg');?>" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Digital Marketing</h4>
@@ -203,11 +203,11 @@
 
 
         <!-- Blog Start -->
-        <div class="container-fluid blog py-5 mb-5">
+        <div class="container-fluid blog py-5 mb-5" id="artikel">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Blog</h5>
-                    <h1>Latest Blog & News</h1>
+                    <h5 class="text-primary">Artikel</h5>
+                    <h1>Artikel Terbaru</h1>
                 </div>
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
@@ -310,18 +310,18 @@
 
 
         <!-- Team Start -->
-        <div class="container-fluid py-5 mb-5 team">
+        <div class="container-fluid py-5 mb-5 team" id="tim">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Team</h5>
-                    <h1>Meet our expert Team</h1>
+                    <h5 class="text-primary">Tim</h5>
+                    <h1>Tim Developer</h1>
                 </div>
                 <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="rounded team-item">
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/team-1.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
@@ -340,7 +340,7 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/team-2.jpg"');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
@@ -359,7 +359,7 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/team-3.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
@@ -378,7 +378,7 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/team-4.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
@@ -399,11 +399,11 @@
         <!-- Team End -->
 
         <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5 mb-5">
+        <div class="container-fluid testimonial py-5 mb-5" id="testimonial">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Testimonial</h5>
-                    <h1>Our Client Saying!</h1>
+                    <h5 class="text-primary">Testimonial</h5>
+                    <h1>Testimonial Klien</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="testimonial-item border p-4">
@@ -497,9 +497,12 @@
         <!-- Testimonial End -->
 
         <!-- Accordion Start -->
-        <div class="container-fluid py-5 mb-5">
+        <div class="container-fluid py-5 mb-5" id="faq">
             <div class="container">
-                <h1 class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">Frequently asked questions</h1>
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">FAQ</h5>
+                    <h1>Frequently asked questions</h1>
+                </div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
