@@ -335,7 +335,7 @@
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
+    background: rgba(3, 243, 7, 0.8);
     transition: .5s;
 }
 
@@ -362,11 +362,11 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important;
+    color: var(--bs-teal) !important;
 }
 
 .services-item:hover .services-content-icon p {
-    color: var(--bs-white);
+    color: var(--bs-teal);
 }
 
 /*** Services End ***/
@@ -480,7 +480,7 @@
 /*** Team Start ***/
 
 .team-item {
-    border-top: 30px solid var(--bs-secondary) !important;
+    border-top: 30px solid var(--bs-teal) !important;
     background: rgba(239, 239, 241, 0.8);
 }
 
@@ -490,7 +490,7 @@
     content: "";
     position: relative;
     top: -101px;
-    background: var(--bs-secondary);
+    background: var(--bs-teal) !important;
     clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
     padding: 60px;
     opacity: 1;

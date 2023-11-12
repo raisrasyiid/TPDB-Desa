@@ -11,11 +11,11 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">Tentang Kami</h5>
-                        <h1 class="mb-4">Best IT Solutions for Village</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                        <!-- <h5 class="text-primary">Tentang Kami</h5> -->
+                        <h1 class="mb-4">Apa itu SIDIGDES?</h1>
+                        <p class="mb-4">SIDIGDES adalah sebuah platform pelayanan publik yang berfokus terhadap pelayanan di tingkat pemerintah desa, Dengan berbagai platform pelayanan terpadu yang kami ciptakan bertujuan untuk mempermudah proses administratif, mempercepat pelayanan masyarakat di desa, sarana publikasi potensi desa, serta sebagai bentuk singkronisasi antara program pemerintah provinsi yakni menghadirkan layanan secara Cepat, Efektif, Efisien, Tanggap, Transparan.</p>
+                        <!-- <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p> -->
+                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Lebih Detail</a>
                     </div>
                 </div>
             </div>
@@ -24,24 +24,25 @@
 
 
         <!-- Services Start -->
-        <div class="container-fluid services py-5 mb-5">
+        <!-- <div class="container-fluid services py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Services</h5>
-                    <h1>Services Built Specifically For Your Business</h1>
+                    <h5 class="text-primary">Fitur</h5>
+                    <h1>Fitur</h1>
+                    <p class="mt-4">Berikut adalah beberapa fitur-fitur yang bisa anda dapatkan dengan pelayanan kami</p>
                 </div>
                 <div class="row g-5 services-inner">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <i class="fa fa-code fa-7x mb-4 text-primary"></i>
+                                    <img src="<?php echo base_url('assets/promosi/img/fitur1.png');?>" alt="gambar" width="300px">
                                     <h4 class="mb-3">Web Design</h4>
                                     <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                     <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="services-item bg-light">
@@ -106,7 +107,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Services End -->
 
 
@@ -115,10 +116,10 @@
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Project</h5>
-                    <h1>Project Yang Pernah Kami Kerjakan</h1>
+                    <h1>Project Yang Dikerjakan</h1>
                 </div>
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="col-md-4 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
                                 <img src="<?php echo base_url('assets/promosi/img/project-1.jpg');?>" class="img-fluid w-100 rounded" alt="">
@@ -131,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-md-4 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="project-item">
                             <div class="project-img">
                                 <img src="<?php echo base_url('assets/promosi/img/project-2.jpg');?>" class="img-fluid w-100 rounded" alt="">
@@ -144,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="col-md-4 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
                                 <img src="<?php echo base_url('assets/promosi/img/project-3.jpg');?>" class="img-fluid w-100 rounded" alt="">
@@ -152,45 +153,6 @@
                                     <a href="#" class="text-center">
                                         <h4 class="text-secondary">Mobile Info</h4>
                                         <p class="m-0 text-white">Upcomming Phone</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="<?php echo base_url('assets/promosi/img/project-4.jpg');?>" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web Development</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="<?php echo base_url('assets/promosi/img/project-5.jpg');?>" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Digital Marketing</h4>
-                                        <p class="m-0 text-white">Marketing Analysis</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="<?php echo base_url('assets/promosi/img/project-6.jpg');?>" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">keyword Research</h4>
-                                        <p class="m-0 text-white">keyword Analysis</p>
                                     </a>
                                 </div>
                             </div>
@@ -207,102 +169,61 @@
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Artikel</h5>
-                    <h1>Artikel Terbaru</h1>
+                    <h1>Artikel</h1>
                 </div>
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
                             <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span>
+                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                                    <a href="" class="btn text-white">Read More</a>
-                                </div>
-                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
-                                    <div class="blog-icon-1">
-                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                    </div>
-                                    <div class="blog-icon-2">
-                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <div class=" text-center position-relative px-3" style="margin-top: -25px;">
                                 <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
                                 <span class="text-secondary">24 March 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                             </div>
-                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
+                                <a href="#">read more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="<?php echo base_url('assets/promosi/img/blog-2.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span>
+                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                                    <a href="" class="btn text-white ">Read More</a>
-                                </div>
-                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
-                                    <div class="blog-icon-1">
-                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                    </div>
-                                    <div class="blog-icon-2">
-                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <div class=" text-center position-relative px-3" style="margin-top: -25px;">
                                 <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
-                                <span class="text-secondary">23 April 2023</span>
+                                <span class="text-secondary">24 March 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                             </div>
-                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
+                                <a href="#">read more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="<?php echo base_url('assets/promosi/img/blog-3.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
+                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                                    <a href="" class="btn text-white ">Read More</a>
-                                </div>
-                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
-                                    <div class="blog-icon-1">
-                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                    </div>
-                                    <div class="blog-icon-2">
-                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <div class=" text-center position-relative px-3" style="margin-top: -25px;">
                                 <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
-                                <span class="text-secondary">30 jan 2023</span>
+                                <span class="text-secondary">24 March 2023</span>
                                 <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                             </div>
-                            <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
+                                <a href="#">read more</a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -403,17 +324,17 @@
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Testimonial</h5>
-                    <h1>Testimonial Klien</h1>
+                    <h1>Testimonial Klien Kami</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="testimonial-item border p-4">
                         <div class="d-flex align-items-center">
                             <div class="">
-                                <img src="img/testimonial-1.jpg" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/testimonial-1.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-secondary">Sarah Viloid</h4>
+                                <p class="m-0 pb-3">Admin Desa Jumawa</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>
@@ -424,17 +345,17 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                            <p class="mb-0">Saya sangat senang dengan pelayanan dari website SIDIGIDES. kami mendapatkan fitur-fitur yang sesuai dengan apa yang kami minta. Semoga SIDIGIDES semakin maju dan sukses</p>
                         </div>
                     </div>
                     <div class="testimonial-item border p-4">
                         <div class=" d-flex align-items-center">
                             <div class="">
-                                <img src="img/testimonial-2.jpg" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/testimonial-2.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-secondary">Andy Chow</h4>
+                                <p class="m-0 pb-3">Kepala Desa</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>
@@ -445,17 +366,17 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                            <p class="mb-0">SIDIGDES sangat memberikan manfaat yang baik bagi perkembangan desa di Indonesia</p>
                         </div>
                     </div>
                     <div class="testimonial-item border p-4">
                         <div class=" d-flex align-items-center">
                             <div class="">
-                                <img src="img/testimonial-3.jpg" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/testimonial-3.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-secondary">Sikaeee</h4>
+                                <p class="m-0 pb-3">Pegawai IT Desa</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>
@@ -466,28 +387,7 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-4.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                            <p class="mb-0">Kami sangat menyukai SIDIGDES karena pelayanan yang baik, menerima berbagai macam request klien yang terkadang aneh. saya sangat senang!</p>
                         </div>
                     </div>
                 </div>
@@ -507,7 +407,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                            Apa itu SIDIGDES?
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -519,7 +419,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                            Fitur apa saja yang dimiliki SIDIGDES?
                         </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -531,7 +431,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                           Bagaimana cara melakukan berlangganan?
                         </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">

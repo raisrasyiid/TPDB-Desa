@@ -102,8 +102,8 @@
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Buat Sistem Desa Anda Lebih Modern</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Dengan adanya Sidigides anda dapat lebih mudah dalam mengelola desa anda.</p>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Buat Landing Page Sistem Desa Anda</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Dengan adanya landing page masyarakat desa anda dapat lebih mudah dalam mengakses informasi desa anda</p>
                                 <a href="#" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
                                 <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
@@ -114,8 +114,8 @@
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Transformasi Digital Desa</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Perluas jangkauan, lakukan percepatan pelayanan dengan sistem informasi desa</p>
                                 <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
                                 <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
@@ -139,30 +139,30 @@
         <div class="container-fluid bg-secondary py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">99</h1>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex justify-content-center">
+                            <h1 class="me-3 text-primary counter-value">1515</h1>
                             <h5 class="text-white mt-1">Jumlah Pengguna Aktif</h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">25</h1>
-                            <h5 class="text-white mt-1">Thousands of successful business</h5>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex justify-content-center">
+                            <h1 class="me-3 text-primary counter-value">100</h1>
+                            <h5 class="text-white mt-1">Desa yang telah Menggunakan</h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                        <div class="d-flex counter">
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex justify-content-center">
                             <h1 class="me-3 text-primary counter-value">120</h1>
-                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                            <h5 class="text-white mt-1">Kabupaten yang mensupport program desa</h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                    <!-- <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
                         <div class="d-flex counter">
                             <h1 class="me-3 text-primary counter-value">5</h1>
                             <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
