@@ -74,4 +74,10 @@ class Main extends CI_Controller
 			echo 'data berhasil ditambahkan!';
 		}
 	}
+
+    public function login_admin(){
+        $this->load->view('adminDesa/layout/header');
+        $this->load->view('adminDesa/layout/menu');
+        $this->load->view('adminDesa/layout/footer');
+    }
 }

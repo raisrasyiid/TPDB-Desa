@@ -55,7 +55,7 @@
                             <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                             <a href="#faq" class="nav-item nav-link">FAQ</a>
                             <a href="#mitra" class="nav-item nav-link">Mitra</a>
-                            <a href="<?php echo site_url('main/login') ?>" class="nav-item nav-link">Login</a>
+                            <a href="<?php echo site_url('main/login'); ?>" class="nav-item nav-link">Login</a>
                             
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>

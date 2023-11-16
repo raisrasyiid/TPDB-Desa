@@ -6,8 +6,8 @@ class Adminpanel extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('admin/layout/header');
-		$this->load->view('admin/layout/menu');
-		$this->load->view('admin/layout/footer');
+		$this->load->view('adminDesa/layout/header');
+        $this->load->view('adminDesa/layout/menu');
+        $this->load->view('adminDesa/layout/footer');
 	}
 }
