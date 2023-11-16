@@ -75,9 +75,4 @@ class Main extends CI_Controller
 		}
 	}
 
-    public function login_admin(){
-        $this->load->view('adminDesa/layout/header');
-        $this->load->view('adminDesa/layout/menu');
-        $this->load->view('adminDesa/layout/footer');
-    }
 }

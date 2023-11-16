@@ -41,7 +41,7 @@
                                         <a class="small" href="forgot-password.html">Lupa Password</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="<?php site_url('auth/registration') ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
+                                        <a class="small" href="<?php site_url('main/registration') ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
                                     </div>
                                 </div>
                             </div>
