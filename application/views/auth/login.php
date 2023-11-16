@@ -16,7 +16,7 @@
                                         <p>Silahkan Login</p>
                                     </div>
                                     
-                                    <form method="post" action="<?php echo site_url('index.php/adminpanel/index'); ?>" class="user">
+                                    <form method="post" action="<?php echo site_url('adminpanel/index'); ?>" class="user">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"

@@ -55,7 +55,6 @@
                             <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                             <a href="#faq" class="nav-item nav-link">FAQ</a>
                             <a href="#mitra" class="nav-item nav-link">Mitra</a>
-                            <a href="<?php echo site_url('main/login'); ?>" class="nav-item nav-link">Login</a>
                             
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>
@@ -66,6 +65,8 @@
                                 </div>
                             </div>
                             <a href="#" class="nav-item nav-link">Kontak</a>
+                            <a href="<?php echo site_url('main/login'); ?>" class="nav-item nav-link">Login</a>
+
                         </div>
                     </div>
                     <!-- <div class="d-none d-xl-flex flex-shirink-0">
@@ -99,7 +100,7 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="<?php echo base_url('assets/promosi/img/carousel-1.jpg');?>" class="img-fluid" alt="First slide">
+                        <img src="<?php echo base_url('assets/promosi/img/gambar1.png');?>" class="img-fluid" alt="First slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
@@ -111,7 +112,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="<?php echo base_url('assets/promosi/img/carousel-2.jpg');?>" class="img-fluid" alt="Second slide">
+                        <img src="<?php echo base_url('assets/promosi/img/gambar2.png');?>" class="img-fluid" alt="Second slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
