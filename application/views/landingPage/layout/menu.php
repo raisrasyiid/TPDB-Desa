@@ -451,8 +451,8 @@
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h1 class="mb-3">Tertarik Menggunakan Sidigides?</h1>
                     <div class="d-grid gap-2 d-md-block mt-4">
-                        <a href="#" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
-                        <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
+                        <a href="<?php echo site_url('adminpanel/index');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
+                        <a href="<?php echo site_url();?>" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
                     </div>
 
                    

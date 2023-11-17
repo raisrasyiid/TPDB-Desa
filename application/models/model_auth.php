@@ -1,16 +1,26 @@
 <?php
 class Model_auth extends CI_Model{
-    public function cek_login($username, $password)
-    {
-        $result = $this->db->where('username', $username)
-                           ->get('user');
 
-        if ($result->num_rows() == 1) {
-            $user = $result->row();
-            if (password_verify($password, $user->password)) {
-                return $user;
-            }
-        }
-        return false;
-    }
+  //login
+    public function cek_login($u, $p){
+		$q = $this->db->get_where('user', array('username'=>$u, 'password'=>$p));
+		return $q;
+	}
+
+  //get all data
+  public function get_all_data($tabel){
+		$q=$this->db->get($tabel);
+		return $q;
+	}
+
+  //insert data
+  public function insert($tabel, $data){
+		$this->db->insert($tabel, $data);
+	}
+
+  public function cek_login_member($u, $p){
+		$q = $this->db->get_where('user', array('username'=>$u, 'password'=>$p));
+		return $q;
+	}
+
 }

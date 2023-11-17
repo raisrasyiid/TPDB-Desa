@@ -16,7 +16,7 @@
                                         <p>Silahkan Login</p>
                                     </div>
                                     
-                                    <form method="post" action="<?php echo site_url('adminpanel/index'); ?>" class="user">
+                                    <form method="post" action="<?php echo site_url('adminpanel/login'); ?>" class="user">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -41,7 +41,7 @@
                                         <a class="small" href="forgot-password.html">Lupa Password</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="<?php site_url('main/registration') ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
+                                        <a class="small" href="<?php echo site_url('adminpanel/register'); ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
                                     </div>
                                 </div>
                             </div>

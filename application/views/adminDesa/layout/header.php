@@ -150,7 +150,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo site_url('#');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/logout');?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
