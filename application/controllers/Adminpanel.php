@@ -20,24 +20,49 @@ class Adminpanel extends CI_Controller
 	//klik login 
 	public function login(){
 		$this->load->model('model_auth');
-		$u= $this->input->post('username');
-		$p= $this->input->post('password');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
 		
-		$cek = $this->model_auth->cek_login($u, $p)->row_array();
-		$result = $this->model_auth->cek_login_member($u, $p)->row_object();
-		if($cek == true){
-				$data_session = array(
-					'id_user' => $result->id_user,
-					'username' => $u,
-					'password' => $p,
-					'status' => 'login'
-				
-				);
-				$this->session->set_userdata($data_session);
-				redirect('adminpanel/dashboard');
+		// $cek = $this->model_auth->cek_login($u, $p)->row_array();
+		// $result = $this->model_auth->cek_login_member($u, $p)->row_object();
+
+		$user = $this->model_auth->get($username); // Panggil fungsi get yang ada di UserModel.php
+
+
+		if(empty($user)){ // Jika hasilnya kosong / user tidak ditemukan
+			$this->session->set_flashdata('message', 'Username tidak ditemukan'); // Buat session flashdata
+			redirect('adminpanel'); // Redirect ke halaman login
 		}else{
-				//jika false
-		} 
+			if($password == $user->password){ // Jika password yang diinput sama dengan password yang didatabase
+				$session = array(
+					// 'authenticated'=>true, // Buat session authenticated dengan value true
+					'username'=>$user->username,  // Buat session username
+					'nama'=>$user->nama, // Buat session nama
+					'role'=>$user->role // Buat session role
+				);
+
+				$this->session->set_userdata($session); // Buat session sesuai $session
+				redirect('adminpanel/dashboard'); // Redirect ke halaman home
+			}else{
+				$this->session->set_flashdata('message', 'Password salah'); // Buat session flashdata
+				redirect('adminpanel'); // Redirect ke halaman login
+			}
+		}
+
+
+		// if($cek == true){
+		// 		$data_session = array(
+		// 			'id_user' => $result->id_user,
+		// 			'username' => $u,
+		// 			'password' => $p,
+		// 			'status' => 'login'
+				
+		// 		);
+		// 		$this->session->set_userdata($data_session);
+		// 		redirect('adminpanel/dashboard');
+		// }else{
+
+		// } 
 		
 	}
 	
@@ -72,10 +97,12 @@ class Adminpanel extends CI_Controller
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$role = $this->input->post('role');
+		$nama = $this->input->post('nama');
 		
 		$dataInput = array(
 			'username'=>$username,
 			'password'=>$password,
+			'nama'=>$nama,
 			'role'=>$role);
 
 		$this->model_auth->insert('user', $dataInput);

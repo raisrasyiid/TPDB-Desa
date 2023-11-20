@@ -188,20 +188,20 @@
         <div class="col-lg-7 mb-5">
             <div class="contact-form">
                 <form name="sentMessage" method="post" action="<?php echo site_url('penduduk/save'); ?>" enctype="multipart/form-data" autocomplete="off">
-
+                <input type="hidden" name="id" value="<?php echo $penduduk->id_penduduk; ?>">
                     <div class="control-group">
                         <label>Nomor Induk kependudukan (NIK)</label>
-                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" autofocus required="required" data-validation-required-message="Please enter your nik" />
+                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" autofocus required="required" value="<?php echo $penduduk->nik; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                         <label>Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" value="<?php echo $penduduk->nama; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                     <label for="jenis_kelamin">Jenis Kelamin</label>
-                        <select name="jenis_kelamin" class="form-control" required>
+                        <select name="jenis_kelamin" class="form-control" required value="<?php echo $penduduk->jenis_kelamin; ?>" >
                             <option value="" selected disabled>- pilih -</option>
                             <option value="laki-laki" name="laki-laki">Laki-laki</option>
                             <option value="perempuan" name="perempuan">Perempuan</option>
@@ -209,22 +209,22 @@
                     </div>
                     <div class="control-group">
                         <label>Tempat Lahir</label>
-                        <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" autofocus required="required" value="<?php echo $penduduk->tempat_lahir; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                         <label>Tanggal Lahir</label>
-                        <input type="date" class="form-control" id="tgl_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="date" class="form-control" id="tgl_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" autofocus required="required" value="<?php echo $penduduk->tanggal_lahir; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                         <label>Agama</label>
-                        <input type="text" class="form-control" id="agama" name="agama" placeholder="Agama" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" class="form-control" id="agama" name="agama" placeholder="Agama" autofocus required="required" value="<?php echo $penduduk->agama; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                     <label for="jenis_kelamin">Status Perkawinan</label>
-                        <select name="status_perkawinan" class="form-control" required>
+                        <select name="status_perkawinan" class="form-control" required value="<?php echo $penduduk->status_perkawinan; ?>" >
                             <option value="" selected disabled>- pilih -</option>
                             <option value="kawin">Kawin</option>
                             <option value="belum kawin">Belum Kawin</option>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="control-group">
                         <label>Alamat</label>
-                        <textarea class="form-control" rows="3" id="alamat" name="alamat" placeholder="Alamat" required="required" data-validation-required-message="Please enter your address"></textarea>
+                        <textarea class="form-control" rows="3" id="alamat" name="alamat" placeholder="Alamat" required="required" value="<?php echo $penduduk->alamat; ?>" ></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div>
