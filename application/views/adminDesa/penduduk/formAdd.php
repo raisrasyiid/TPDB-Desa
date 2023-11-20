@@ -10,8 +10,8 @@
         </button>
 
         <!-- Topbar Search -->
-        <h1 class="h3 mb-0 text-gray-800">Halaman Data Penduduk</h1>
-
+        <h1 class="h3 mb-0 text-gray-800">Halaman Tambah Penduduk</h1>
+    
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
 
@@ -178,69 +178,59 @@
     </nav>
     <!-- End of Topbar -->
 
-    <!-- Begin Page Content -->
-    <div class="container-fluid">
-        <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Data Penduduk</h1>
-        <p>Halaman data penduduk menampilkan penduduk yang kemudian akan ditampilkan ke halaman home sehingga kategori barang dapat dilihat oleh pelanggan yang ingin membeli produk berdasarkan kategori.</p>
+<!-- Contact Start -->
+<div class="container-fluid">
+    <div class="latest-product__text mb-4">
+        <h4 class="section-title px-5">Form Tambah Penduduk</h4>
+        <p class="mb-4 px-5">Halaman tambah alamat untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col-lg-7 mb-5">
+            <div class="contact-form">
+                <form name="sentMessage" method="post" action="<?php echo site_url('blog/save_add_blog'); ?>" enctype="multipart/form-data" autocomplete="off">
 
-        <!-- DataTales Example -->
-        <div class="card shadow mb-4">
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th style="width: auto">#</th>
-                                <th>NIK</th>
-                                <th>Nama</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Tempat Lahir</th>
-                                <th>Tanggal Lahir</th>
-                                <th>Agama</th>
-                                <th>Status Perkawinan</th>
-                                <th>Alamat</th>
-                                <th style="width: 40px">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php $no = 1;
-                            foreach ($penduduk as $val) { ?>
-                                <tr>
-                                    <td><?php echo $no; ?></td>
-                                    <td><?php echo $val->nik; ?></td>
-                                    <td><?php echo $val->nama; ?></td>
-                                    <td><?php echo $val->jenis_kelamin; ?></td>
-                                    <td><?php echo $val->tempat_lahir; ?></td>
-                                    <td><?php echo $val->tanggal_lahir; ?></td>
-                                    <td><?php echo $val->agama; ?></td>
-                                    <td><?php echo $val->status_perkawinan; ?></td>
-                                    <td><?php echo $val->alamat; ?></td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <a href="" class="btn btn-warning">Edit</a>
-                                            <a href="" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            <?php $no++;
-                            } ?>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="card-footer clearfix">
-                    <a href="<?php echo site_url('penduduk/add'); ?>" class="btn btn-sm btn-info float-left">Tambah Penduduk</a>
-                </div>
+                    <div class="control-group">
+                        <label>Nomor Induk kependudukan (NIK)</label>
+                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" autofocus required="required" data-validation-required-message="Please enter your nik" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                    <label for="jenis_kel">Jenis Kelamin</label>
+                        <select name="jenis_kel" id="jenis_kel">
+                            <option value="laki-laki">Laki-laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Tempat Lahir</label>
+                        <input type="text" class="form-control" id="tmpt_lahir" name="tempat" placeholder="Tempat Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="tgl_lahir" name="tanggal" placeholder="Tanggal Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Agama</label>
+                        <input type="text" class="form-control" id="agama" name="agama" placeholder="Agama" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Alamat</label>
+                        <textarea class="form-control" rows="3" id="alamat" name="alamat" placeholder="Alamat" required="required" data-validation-required-message="Please enter your address"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div>
+                        <button class="btn bnt-sm btn-info float-left" type="submit" id="sendMessageButton">Simpan</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- /.container-fluid -->
-
 </div>
-<!-- End of Main Content -->
-
-</div>
-<!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->

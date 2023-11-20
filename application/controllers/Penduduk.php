@@ -21,14 +21,11 @@ class Penduduk extends CI_Controller
 		$this->load->view('adminDesa/layout/footer');
 	}
 
-	// public function index(){
-	// 	if(empty($this->session->userdata('userName'))){
-	// 		redirect('adminpanel');
-	// 	}
-	// 	$data['kategori']=$this->Madmin->get_all_data('tbl_kategori')->result();
-	// 	$this->load->view('admin/layout/header');
-	// 	$this->load->view('admin/layout/menu');
-	// 	$this->load->view('admin/kategori/tampil', $data);
-	// 	$this->load->view('admin/layout/footer');
-	// }
+	//tampil add
+	public function add(){
+		$this->load->view('adminDesa/layout/header');
+		$this->load->view('adminDesa/penduduk/formAdd');
+		$this->load->view('adminDesa/layout/footer');
+	}
+
 }
