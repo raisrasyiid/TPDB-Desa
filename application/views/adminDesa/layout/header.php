@@ -44,7 +44,7 @@
             <!-- Nav Item - Dashboard -->
           
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="<?php echo site_url('adminpanel');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/dashboard');?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -53,7 +53,7 @@
             <!-- Heading -->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#datawarga"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-home"></i>
@@ -73,11 +73,11 @@
 						<a class="collapse-item" href="<?php echo base_url('surat/kematian'); ?>">Sosmed</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Data Penduduk -->
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="<?php echo site_url('penduduk');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('penduduk/index');?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data Penduduk</span>
                 </a>

@@ -36,7 +36,7 @@ class Adminpanel extends CI_Controller
 				$this->session->set_userdata($data_session);
 				redirect('adminpanel/dashboard');
 		}else{
-
+				//jika false
 		} 
 		
 	}
@@ -82,20 +82,4 @@ class Adminpanel extends CI_Controller
 		redirect('adminpanel/index');
 	}
 
-
-
-	// public function regis()
-	// {
-	// 	$this->form_validation->set_rules('desa', 'Desa', 'required|trim');
-	// 	$this->form_validation->set_rules('nama', 'Nama', 'required|trim|valid_email');
-	// 	$this->form_validation->set_rules('email', 'Email', 'required|trim');
-	// 	$this->form_validation->set_rules('password');
-	// 	if ($this->form_validation->run() == false){
-	// 		$this->load->view('adminDesa/layout/header');
-	// 		$this->load->view('adminDesa/layout/menu');
-	// 		$this->load->view('adminDesa/layout/footer');
-	// 		} else {
-	// 		echo 'data berhasil ditambahkan!';
-	// 	}
-	// }
 }

@@ -194,23 +194,32 @@
                                 <th style="width: auto">#</th>
                                 <th>NIK</th>
                                 <th>Nama</th>
-                                <th>Tanggal Lahir</th>
                                 <th>Jenis Kelamin</th>
-                                <th>Pendidikan terakhir</th>
-                                <th>Status Tinggal</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Agama</th>
+                                <th>Status Perkawinan</th>
+                                <th>Alamat</th>
                                 <th style="width: 40px">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($kategori as $val) { ?>
+                            foreach ($penduduk as $val) { ?>
                                 <tr>
                                     <td><?php echo $no; ?></td>
-                                    <td><?php echo $val->namaKat; ?></td>
+                                    <td><?php echo $val->nik; ?></td>
+                                    <td><?php echo $val->nama; ?></td>
+                                    <td><?php echo $val->jenis_kelamin; ?></td>
+                                    <td><?php echo $val->tempat_lahir; ?></td>
+                                    <td><?php echo $val->tanggal_lahir; ?></td>
+                                    <td><?php echo $val->agama; ?></td>
+                                    <td><?php echo $val->status_perkawinan; ?></td>
+                                    <td><?php echo $val->alamat; ?></td>
                                     <td>
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('kategori/edit/' . $val->idKat); ?>" class="btn btn-warning">Edit</a>
-                                            <a href="<?php echo site_url('kategori/delete/' . $val->idKat); ?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
+                                            <a href="" class="btn btn-warning">Edit</a>
+                                            <a href="" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
                                         </div>
                                     </td>
                                 </tr>
