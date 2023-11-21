@@ -237,6 +237,12 @@
                     </div>
                     <div>
                         <button class="btn bnt-sm btn-info float-left" type="submit" id="sendMessageButton">Simpan</button>
+                        <button onClick="goBack()".GoBack  class="btn btn-danger"> Kembali</button>
+                        <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                        </script>
                     </div>
                 </form>
             </div>
