@@ -46,4 +46,11 @@ class Model_auth extends CI_Model{
 		$this->db->delete($tabel, array($id => $val)); 
 	}
 
+	//detail penduduk
+	public function detail($id = NULL)
+	{
+		$query = $this->db->get_where('kependudukan', array('nik' => $id))->row_array();
+		return $query;
+	}
+
 }

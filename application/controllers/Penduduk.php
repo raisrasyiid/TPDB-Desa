@@ -109,6 +109,28 @@ class Penduduk extends CI_Controller
 		$this->model_auth->delete('kependudukan', 'id_penduduk', $id);
 		redirect('penduduk/index');
 	}
+
+	public function detail1($id) {
+
+		// $data['title'] = "Detail penduduk - Desa Warung Bambu";
+		$this->load->model('model_auth');
+		$detail = $this->model_auth->detail($id);
+		$data['detail'] = $detail;
+		$this->load->view('adminDesa/layout/header');
+		$this->load->view('adminDesa/penduduk/detail', $data);
+		$this->load->view('adminDesa/layout/footer');
+	}
+
+	public function detail($id){
+		if(empty($this->session->userdata('username'))){
+			redirect('adminpanel/index');
+		}
+		$dataWhere = array('nik'=>$id);
+		$data['penduduk'] = $this->model_auth->get_by_id('kependudukan', $dataWhere)->row_object();
+		$this->load->view('adminDesa/layout/header');
+		$this->load->view('adminDesa/penduduk/formEdit', $data);
+		$this->load->view('adminDesa/layout/footer');
+	}
 	
 	
 

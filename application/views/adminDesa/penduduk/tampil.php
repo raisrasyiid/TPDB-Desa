@@ -228,7 +228,7 @@
                                         <div class="btn-group">
                                             <a href="<?php echo site_url('penduduk/get_by_id/'.$val->nik);?>" class="btn btn-warning">Edit</a>
                                             <a href="<?php echo site_url('penduduk/delete/'.$val->id_penduduk);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
-                                            <a href="" class="btn btn-info">Tampil</a>
+                                            <a href="<?php echo site_url('penduduk/detail/'. $val->id_penduduk);?>" class="btn btn-info">Tampil</a>
                                         </div>
                                     </td>
                                     <?php } ?>
