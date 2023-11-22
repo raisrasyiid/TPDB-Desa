@@ -10,7 +10,7 @@
         </button>
 
         <!-- Topbar Search -->
-        <h1 class="h3 mb-0 text-gray-800">Halaman Tambah Penduduk</h1>
+        <h1 class="h3 mb-0 text-gray-800">Halaman Edit Penduduk</h1>
     
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -181,13 +181,13 @@
 <!-- Contact Start -->
 <div class="container-fluid">
     <div class="latest-product__text mb-4">
-        <h4 class="section-title px-5">Form Tambah Penduduk</h4>
+        <h4 class="section-title px-5">Form Edit Penduduk</h4>
         <p class="mb-4 px-5">Halaman tambah alamat untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
     </div>
     <div class="row px-xl-5">
         <div class="col-lg-7 mb-5">
             <div class="contact-form">
-                <form name="sentMessage" method="post" action="<?php echo site_url('penduduk/save'); ?>" enctype="multipart/form-data" autocomplete="off">
+                <form name="sentMessage" method="post" action="<?php echo site_url('penduduk/edit'); ?>" enctype="multipart/form-data" autocomplete="off">
                 <input type="hidden" name="id" value="<?php echo $penduduk->id_penduduk; ?>">
                     <div class="control-group">
                         <label>Nomor Induk kependudukan (NIK)</label>

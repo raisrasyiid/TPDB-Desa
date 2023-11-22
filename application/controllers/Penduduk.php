@@ -85,7 +85,7 @@ class Penduduk extends CI_Controller
 		$status = $this->input->post('status_perkawinan');
 		$alamat = $this->input->post('alamat');
 
-		$dataInput=array(
+		$dataUpdate = array(
 			'nik'=>$nik,
 			'nama'=>$nama,
 			'jenis_kelamin'=>$jenKel,
@@ -95,7 +95,7 @@ class Penduduk extends CI_Controller
 			'status_perkawinan'=>$status,
 			'alamat'=>$alamat,
 		);
-		$this->Madmin->update('kependudukan', $dataUpdate, 'id_penduduk', $id);
+		$this->model_auth->update('kependudukan', $dataUpdate, 'nik', $nik);
 			redirect('penduduk/index');
 
 
@@ -112,7 +112,7 @@ class Penduduk extends CI_Controller
 
 	public function detail1($id) {
 
-		// $data['title'] = "Detail penduduk - Desa Warung Bambu";
+		$data['title'] = "Detail penduduk - Desa Warung Bambu";
 		$this->load->model('model_auth');
 		$detail = $this->model_auth->detail($id);
 		$data['detail'] = $detail;
@@ -121,14 +121,10 @@ class Penduduk extends CI_Controller
 		$this->load->view('adminDesa/layout/footer');
 	}
 
-	public function detail($id){
-		if(empty($this->session->userdata('username'))){
-			redirect('adminpanel/index');
-		}
-		$dataWhere = array('nik'=>$id);
-		$data['penduduk'] = $this->model_auth->get_by_id('kependudukan', $dataWhere)->row_object();
+	public function dashboard(){
+		$data['penduduk'] = $this->model_auth->get_all_data('kependudukan')->result();
 		$this->load->view('adminDesa/layout/header');
-		$this->load->view('adminDesa/penduduk/formEdit', $data);
+		$this->load->view('adminDesa/penduduk/detail', $data);
 		$this->load->view('adminDesa/layout/footer');
 	}
 	
