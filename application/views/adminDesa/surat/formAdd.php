@@ -10,7 +10,7 @@
         </button>
 
         <!-- Topbar Search -->
-        <h1 class="h3 mb-0 text-gray-800">Halaman Tambah Penduduk</h1>
+        <h1 class="h3 mb-0 text-gray-800">Halaman Tambah Surat</h1>
     
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -181,60 +181,52 @@
 <!-- Contact Start -->
 <div class="container-fluid">
     <div class="latest-product__text mb-4">
-        <h4 class="section-title px-5">Form Tambah Penduduk</h4>
-        <p class="mb-4 px-5">Halaman tambah alamat untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
+        <h4 class="section-title px-5">Form Tambah Surat</h4>
+        <p class="mb-4 px-5">Halaman tambah surat untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
     </div>
     <div class="row px-xl-5">
         <div class="col-lg-7 mb-5">
             <div class="contact-form">
-                <form name="sentMessage" method="post" action="<?php echo site_url('penduduk/save'); ?>" enctype="multipart/form-data" autocomplete="off">
-
-                    <div class="control-group">
-                        <label>Nomor Induk kependudukan (NIK)</label>
-                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" autofocus required="required" data-validation-required-message="Please enter your nik" />
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="control-group">
-                        <label>Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" data-validation-required-message="Please enter your name" />
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="control-group">
-                    <label for="jenis_kelamin">Jenis Kelamin</label>
-                        <select name="jenis_kelamin" class="form-control" required>
+                <form name="sentMessage" method="post" action="<?php echo site_url('surat/save'); ?>" enctype="multipart/form-data" autocomplete="off">
+                <div class="control-group">
+                <select name="nik" class="form-control" id="nama" required>
+						<?php
+                            foreach ($surat as $surat):
+                        ?>
+						<option value="<?php echo $surat->id_penduduk; ?>">
+                        <?php echo $surat->nik; ?> - <?php echo $surat->nama; ?>
+                        </option>
+						<?php
+                            endforeach;
+                        ?>
+					  </select>
+                    <label for="status">Jenis Surat</label>
+                        <select name="jenis_surat" class="form-control" required id="status">
                             <option value="" selected disabled>- pilih -</option>
-                            <option value="laki-laki" name="laki-laki">Laki-laki</option>
-                            <option value="perempuan" name="perempuan">Perempuan</option>
+                            <option value="kematian" name="kematian">surat kematian</option>
+                            <option value="kelahiran" name="kelahiran">surat kelahiran</option>
+                            <option value="penghasilan" name="penghasilan">surat penghasilan</option>
                         </select>
                     </div>
                     <div class="control-group">
-                        <label>Tempat Lahir</label>
-                        <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <label>Keperluan</label>
+                        <input type="text" class="form-control" id="keperluan" name="keperluan" placeholder="keperluan" autofocus required="required" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <label>Tanggal Lahir</label>
-                        <input type="date" class="form-control" id="tgl_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <label>Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal" autofocus required="required" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                    <label for="jenis_kelamin">Agama</label>
-                        <select name="agama" class="form-control" required>
+                    <label for="status">Status</label>
+                        <select name="status" class="form-control" required id="status">
                             <option value="" selected disabled>- pilih -</option>
-                            <option value="islam">Islam</option>
-                            <option value="kristen">Kristen</option>
-                            <option value="katholik">Katholik</option>
-                            <option value="hindu">Hindu</option>
-                            <option value="budha">Budha</option>
-                            <option value="koghucu">Konghucu</option>
+                            <option value="selesai" name="selesai">selesai</option>
+                            <option value="belum selesai" name="belumselesai">belum selesai</option>
                         </select>
                     </div>
-                    <div class="control-group">
-                        <label>Alamat</label>
-                        <textarea class="form-control" rows="3" id="alamat" name="alamat" placeholder="Alamat" required="required" data-validation-required-message="Please enter your address"></textarea>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div>
+                    <div class="mt-4">
                         <button class="btn bnt-sm btn-info float-left" type="submit" id="sendMessageButton">Simpan</button>
                         <button onClick="goBack()".GoBack  class="btn btn-danger"> Kembali</button>
                         <script>

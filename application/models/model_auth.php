@@ -3,12 +3,12 @@ class Model_auth extends CI_Model{
 
   //login
     public function cek_login($u, $p){
-		$q = $this->db->get_where('user', array('username'=>$u, 'password'=>$p));
+		$q = $this->db->get_where('tbl_user', array('username'=>$u, 'password'=>$p));
 		return $q;
 	}
 
 	public function get($username){
-        $this->db->where('username', $username);
+        $this->db->where('username', $username, 'role', $role);
         $result = $this->db->get('user')->row(); 
 
         return $result;
@@ -26,7 +26,7 @@ class Model_auth extends CI_Model{
 	}
 
   public function cek_login_member($u, $p){
-		$q = $this->db->get_where('user', array('username'=>$u, 'password'=>$p));
+		$q = $this->db->get_where('tbl_user', array('username'=>$u, 'password'=>$p));
 		return $q;
 	}
 
@@ -36,21 +36,26 @@ class Model_auth extends CI_Model{
 	}
 
 	//update data
-	public function update($tabel, $data, $pk, $id){
-		$this->db->where($pk, $id);
-		$this->db->update($tabel, $data);
-	}
+	public function update($table, $data, $pk, $id){
+        $this->db->where($pk, $id);
+        $this->db->update($table, $data);
+    }
 
 	//delete data
 	public function delete($tabel, $id, $val){
 		$this->db->delete($tabel, array($id => $val)); 
 	}
 
+	public function join($table, $tbljoin, $join){
+        $this->db->join($tbljoin, $join);
+        return $this->db->get($table);
+    }
+
 	//detail penduduk
-	public function detail($id = NULL)
-	{
-		$query = $this->db->get_where('kependudukan', array('nik' => $id))->row_array();
-		return $query;
-	}
+	// public function detail($id = NULL)
+	// {
+	// 	$query = $this->db->get_where('kependudukan', array('nik' => $id))->row_array();
+	// 	return $query;
+	// }
 
 }

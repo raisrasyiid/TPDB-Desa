@@ -28,11 +28,11 @@
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                                 <?php echo form_error('password', '<div class="text-danger small ml-2">','</div'); ?> 
                                         </div>
-                                        <!-- <div class="form-group">
+                                        <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
-                                                id="namaDesa" placeholder="Nama Desa" name="desa">
-                                                <?php echo form_error('password', '<div class="text-danger small ml-2">','</div'); ?> 
-                                        </div> -->
+                                                id="namadesa" placeholder="Nama Desa" name="nama_desa">
+                                                <?php echo form_error('nama_desa', '<div class="text-danger small ml-2">','</div'); ?> 
+                                        </div>
                                         <!-- <div class="form-group">
                                             <div class="custom-control-costum-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">

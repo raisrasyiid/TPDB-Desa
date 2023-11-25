@@ -186,10 +186,10 @@
     </div>
     <div class="row px-xl-5">
         <div class="col-lg-7 mb-5">
-        <?php 
-    $idPenduduk = $this->session->userdata('id_penduduk');
-    $penduduk = $this->db->get_where('kependudukan', ['id_penduduk' => $idPenduduk])->row_array();
-?>
+        <!-- <?php 
+    $idPenduduk = $this->session->userdata('nik');
+    $penduduk = $this->db->get_where('kependudukan', ['nik' => $idPenduduk])->row_array();
+?> -->
 <div class="container-fluid pt-5" id="penduduk">
     <!-- <div class="text-center mb-4">
         <h2 class="section-title px-5"><span class="px-2">Dashboard penduduk$penduduk</span></h2>
@@ -197,15 +197,17 @@
     <div class="card">
         <div class="card-header">Profile Penduduk</div>
         <div class="card-body">
-            <h5 class="card-title">NIK : <?php echo $penduduk['nik']; ?></h5>
-            <p class="card-text">Nama : <?= $penduduk['nama'] ?></p>
-            <p class="card-text">Jenis kelamin : <?= $penduduk['jenis_kelamin'] ?></p>
-            <p class="card-text">Tempat lahir : <?= $penduduk['tempat_lahir'] ?></p>
-            <p class="card-text">Tanggal lahir : <?= $penduduk['tanggal_lahir'] ?></p>
-            <p class="card-text">Agama : <?= $penduduk['agama'] ?></p>
-            <p class="card-text">Status perkawinan : <?= $penduduk['status perkawinan'] ?></p>
-            <p class="card-text">Alamat : <?= $penduduk['alamat'] ?></p>
-            <!-- <a href="<?= site_url('main/get_by_id/'.$penduduk['idKonsumen']);?>" class="btn btn-primary">Edit Profile</a> -->
+        <?php
+        foreach ($penduduk as $val) { ?>
+            <p class="card-title">NIK : ><?php echo $nik; ?></p>
+            <p class="card-text">Nama : <?php echo $nama; ?></p>
+            <p class="card-text">Jenis kelamin : <?= $val['jenis_kelamin'] ?></p>
+            <p class="card-text">Tempat lahir : <?= $val['tempat_lahir'] ?></p>
+            <p class="card-text">Tanggal lahir : <?= $val['tanggal_lahir'] ?></p>
+            <p class="card-text">Agama : <?= $val['agama'] ?></p>
+            <p class="card-text">Status perkawinan : <?= $val['status perkawinan'] ?></p>
+            <p class="card-text">Alamat : <?= $val['alamat'] ?></p>
+            <?php } ?>
         </div>
     </div>
     <button onClick="goBack()".GoBack  class="btn btn-danger mt-4"> Kembali</button>

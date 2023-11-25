@@ -21,12 +21,8 @@
                                             name="password" placeholder="password">
                                     </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="role"
-                                        name="role" placeholder="role">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="nama"
-                                        name="nama" placeholder="nama">
+                                    <input type="text" class="form-control form-control-user" id="namadesa"
+                                        name="namadesa" placeholder="nama desa">
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-user btn-block" type="submit" id="sendMesrsageButton">Daftar</button>

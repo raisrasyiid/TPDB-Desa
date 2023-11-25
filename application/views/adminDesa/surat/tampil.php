@@ -38,7 +38,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">id desa : <?php echo $this->session->userdata('id_user') ?>  </h6>
+                <h6 class="text-dark">nama desa : <?php echo $this->session->userdata('id_user') ?> </h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -86,48 +86,44 @@
     <div class="container-fluid table-responsive">
         <!-- Page Heading -->
         <div class="box-header">
-            <h4 style="text-align:center"><b>DATA PENDUDUK DESA</b></h4>
+            <h4 style="text-align:center"><b>Data Permohonan Surat</b></h4>
             <hr>
         </div>
         
-        <p>Halaman data penduduk menampilkan penduduk yang kemudian akan ditampilkan ke halaman home sehingga kategori barang dapat dilihat oleh pelanggan yang ingin membeli produk berdasarkan kategori.</p>
+        <p>Halaman data surat menampilkan penduduk yang kemudian akan ditampilkan ke halaman home sehingga kategori barang dapat dilihat oleh pelanggan yang ingin membeli produk berdasarkan kategori.</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-body">
             <div class="card-footer clearfix">
-                    <a href="<?php echo site_url('penduduk/add'); ?>" class="btn btn-sm btn-info float-left">Tambah Penduduk</a>
+                    <a href="<?php echo site_url('surat/add'); ?>" class="btn btn-sm btn-info float-left">Tambah data</a>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr class="active">
-                                <th style="width: auto">No</th>
-                                <th style="text-align:center">NIK</th>
-                                <th style="text-align:center">Nama</th>
-                                <th style="text-align:center">Jenis Kelamin</th>
-                                <th style="text-align:center">Tempat Lahir</th>
-                                <th style="text-align:center">Tanggal Lahir</th>
-                                <th style="text-align:center">Agama</th>
-                                <th style="text-align:center">Alamat</th>
-                                <th style="width: 40px">Aksi</th>
+                                <th style="text-align:center">No</th>
+                                <th style="text-align:center">ID Penduduk</th>
+                                <th style="text-align:center">Jenis Surat</th>
+                                <th style="text-align:center">Keperluan</th>
+                                <th style="text-align:center">Tanggal</th>
+                                <th style="text-align:center">Status</th>
+                                <th style="text-align:center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($penduduk as $val) { ?>
+                            foreach ($surat as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
-                                    <td><?php echo $val->nik; ?></td>
-                                    <td><?php echo $val->nama; ?></td>
-                                    <td><?php echo $val->jenis_kelamin; ?></td>
-                                    <td><?php echo $val->tempat_lahir; ?></td>
-                                    <td><?php echo $val->tanggal_lahir; ?></td>
-                                    <td><?php echo $val->agama; ?></td>
-                                    <td><?php echo $val->alamat; ?></td>
+                                    <td><?php echo $val->id_user; ?></td>
+                                    <td><?php echo $val->jenis_surat; ?></td>
+                                    <td><?php echo $val->keperluan; ?></td>
+                                    <td><?php echo $val->tanggal; ?></td>
+                                    <td><?php echo $val->status; ?></td>
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('penduduk/get_by_id/'.$val->nik);?>" class="btn btn-warning">Edit</a>
+                                            <a href="<?php echo site_url('penduduk/get_by_id/'.$val->id_penduduk);?>" class="btn btn-warning">Edit</a>
                                             <a href="<?php echo site_url('penduduk/delete/'.$val->id_penduduk);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
                                             <!-- <a href="<?php echo site_url('penduduk/dashboard/'. $val->nik);?>" class="btn btn-info">Tampil</a> -->
                                         </div>

@@ -188,7 +188,7 @@
         <div class="col-lg-7 mb-5">
             <div class="contact-form">
                 <form name="sentMessage" method="post" action="<?php echo site_url('penduduk/edit'); ?>" enctype="multipart/form-data" autocomplete="off">
-                <input type="hidden" name="id" value="<?php echo $penduduk->id_penduduk; ?>">
+                <input type="hidden" name="id_penduduk" value="<?php echo $penduduk->id_penduduk; ?>">
                     <div class="control-group">
                         <label>Nomor Induk kependudukan (NIK)</label>
                         <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" autofocus required="required" value="<?php echo $penduduk->nik; ?>" />
@@ -217,17 +217,16 @@
                         <input type="date" class="form-control" id="tgl_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" autofocus required="required" value="<?php echo $penduduk->tanggal_lahir; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
-                    <div class="control-group">
-                        <label>Agama</label>
-                        <input type="text" class="form-control" id="agama" name="agama" placeholder="Agama" autofocus required="required" value="<?php echo $penduduk->agama; ?>" />
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="control-group">
-                    <label for="jenis_kelamin">Status Perkawinan</label>
-                        <select name="status_perkawinan" class="form-control" required value="<?php echo $penduduk->status_perkawinan; ?>" >
+                   <div class="control-group">
+                    <label for="jenis_kelamin">Agama</label>
+                        <select name="agama" class="form-control" value ="<?php echo $penduduk->agama; ?>">
                             <option value="" selected disabled>- pilih -</option>
-                            <option value="kawin">Kawin</option>
-                            <option value="belum kawin">Belum Kawin</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katholik">Katholik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="koghucu">Konghucu</option>
                         </select>
                     </div>
                     <div class="control-group">
