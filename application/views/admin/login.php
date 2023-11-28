@@ -12,11 +12,11 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Selamat datang</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Selamat Datang Admin</h1>
                                         <p>Silahkan Login</p>
                                     </div>
                                     
-                                    <form method="post" action="<?php echo site_url('adminpanel/login'); ?>" class="user">
+                                    <form method="post" action="<?php echo site_url('admin/login'); ?>" class="user">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -28,11 +28,6 @@
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                                 <?php echo form_error('password', '<div class="text-danger small ml-2">','</div'); ?> 
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                id="namadesa" placeholder="Nama Desa" name="nama_desa">
-                                                <?php echo form_error('nama_desa', '<div class="text-danger small ml-2">','</div'); ?> 
-                                        </div>
                                         <!-- <div class="form-group">
                                             <div class="custom-control-costum-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
@@ -42,14 +37,11 @@
                                         <button type="submit" class="btn btn-warning form-control">Login</button>
                                     </form>
                                     <hr>
-                                    <!-- <div class="text-center">
-                                        <a class="small" href="<?php echo site_url('admin/index');?>">Login sebagai admin</a>
-                                    </div> -->
                                     <div class="text-center">
                                         <a class="small" href="forgot-password.html">Lupa Password</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="<?php echo site_url('adminpanel/register'); ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
+                                        <a class="small" href="<?php echo site_url('admin/register'); ?>">Registrasi Disini Jika Belum Memiliki Akun</a>
                                     </div>
                                 </div>
                             </div>

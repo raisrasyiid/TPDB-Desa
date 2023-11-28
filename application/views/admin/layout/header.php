@@ -31,11 +31,11 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo site_url('adminpanel');?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo site_url('admin/admin');?>">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Admin Sigidesa</div>
+                <div class="sidebar-brand-text mx-3">Admin User Sidigdes</div>
             </a>
 
             <!-- Divider -->
@@ -44,7 +44,7 @@
             <!-- Nav Item - Dashboard -->
           
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/dashboard');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('admin/admin');?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -52,7 +52,7 @@
 
             <!-- Nav Item - Data Penduduk -->
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="<?php echo site_url('user/index');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('admin/tampil_user');?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data User</span>
                 </a>
@@ -61,7 +61,7 @@
 
 			 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/logout');?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('admin/logout');?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
