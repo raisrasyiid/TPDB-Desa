@@ -20,8 +20,8 @@ class Surat extends CI_Controller
 		$data['user'] = $this->model_auth->get_all_data('tbl_user')->result();
 		$data['penduduk'] = $this->model_auth->get_all_data('tbl_penduduk')->result();
 
-		// join
-		$data['tampil_surat'] = $this->model_auth->join('tbl_user', 'tbl_penduduk', 'tbl_user.id_user=tbl_penduduk.id_penduduk')->result();
+		// join table
+		$data['tampil_surat'] = $this->model_auth->join('tbl_surat', 'tbl_penduduk', 'tbl_surat.id_surat=tbl_penduduk.id_penduduk')->result();
 
 		$this->load->view('adminDesa/layout/header');
 		$this->load->view('adminDesa/surat/tampil', $data);

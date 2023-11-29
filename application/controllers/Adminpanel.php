@@ -68,10 +68,10 @@ class Adminpanel extends CI_Controller
 	//halaman dashboard admin
 	public function dashboard()
 	{
-		// $id = $this->session->userdata('id_user');
-        // $dataWhere = array('id_user' => $id);
-        // $data['user']=$this->model_auth->get_by_id('tbl_user', $dataWhere)->result();
-        
+        if(empty($this->session->userdata('id_user'))){
+			redirect('admin/index');
+		}
+
 		$this->load->view('adminDesa/layout/header');
         $this->load->view('adminDesa/layout/menu');
         $this->load->view('adminDesa/layout/footer');

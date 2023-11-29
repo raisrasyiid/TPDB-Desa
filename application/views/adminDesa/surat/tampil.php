@@ -104,6 +104,8 @@
                             <tr class="active">
                                 <th style="text-align:center">No</th>
                                 <th style="text-align:center">ID Penduduk</th>
+                                <th style="text-align:center">NIK</th>
+                                <th style="text-align:center">Nama</th>
                                 <th style="text-align:center">Jenis Surat</th>
                                 <th style="text-align:center">Keperluan</th>
                                 <th style="text-align:center">Tanggal</th>
@@ -113,10 +115,12 @@
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($surat as $val) { ?>
+                            foreach ($tampil_surat as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
                                     <td><?php echo $val->id_user; ?></td>
+                                    <td><?php echo $val->nik; ?></td>
+                                    <td><?php echo $val->nama; ?></td>
                                     <td><?php echo $val->jenis_surat; ?></td>
                                     <td><?php echo $val->keperluan; ?></td>
                                     <td><?php echo $val->tanggal; ?></td>

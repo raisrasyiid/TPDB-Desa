@@ -73,6 +73,10 @@ class Admin extends CI_Controller
 
 	//tampil halaman login
 	public function admin(){
+		if(empty($this->session->userdata('id_admin'))){
+			redirect('admin/index');
+		}
+
 		$this->load->view('admin/layout/header');
         $this->load->view('admin/layout/menu');
 		$this->load->view('admin/layout/footer');
@@ -80,6 +84,9 @@ class Admin extends CI_Controller
 
 	//tampil data user
 	public function tampil_user(){	
+		if(empty($this->session->userdata('id_admin'))){
+			redirect('admin/index');
+		}
 
 		$data['user'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
 		$this->load->view('admin/layout/header');
