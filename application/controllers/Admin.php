@@ -88,7 +88,14 @@ class Admin extends CI_Controller
 			redirect('admin/index');
 		}
 
-		$data['user'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
+		$data['trasaksi'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
+		$data['admin'] = $this->model_auth->get_all_data('tbl_admin')->result();
+		$data['user'] = $this->model_auth->get_all_data('tbl_user')->result();
+
+		// join table
+		$data['tampil_admin'] = $this->model_auth->join('tbl_transaksi', 'tbl_user', 'tbl_transaksi.id_transaksi=tbl_user.id_user')->result();
+
+		// $data['user'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
 		$this->load->view('admin/layout/header');
         $this->load->view('admin/user/tampil', $data);
 		$this->load->view('admin/layout/footer');

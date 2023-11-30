@@ -105,23 +105,24 @@
                                 <th style="text-align:center">No</th>
                                 <th style="text-align:center">ID Transaksi</th>
                                 <th style="text-align:center">ID User</th>
-                                <!-- <th style="text-align:center">Username</th>
-                                <th style="text-align:center">Password</th> -->
-                                <!-- <th style="text-align:center">Nama Desa</th> -->
+                                <th style="text-align:center">Username</th>
+                                <th style="text-align:center">Password</th>
+                                <th style="text-align:center">Nama Desa</th>
                                 <th style="text-align:center">Status (bayar/belum bayar)</th>
                                 <th style="text-align:center">Tenggat Waktu</th>
-                                <th style="width: 40px">Aksi</th>
+                                <th style="text-align:center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($user as $val) { ?>
+                            foreach ($tampil_admin as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
                                     <td><?php echo $val->id_transaksi; ?></td>
                                     <td><?php echo $val->id_user; ?></td>
-                                    <!-- <td><?php echo $val->username; ?></td>
-                                    <td><?php echo $val->password; ?></td> -->
+                                    <td><?php echo $val->username; ?></td>
+                                    <td><?php echo $val->password; ?></td>
+                                    <td><?php echo $val->nama_desa; ?></td>
                                     <td><?php echo $val->status_pembayaran; ?></td>
                                     <td><?php echo $val->tenggat_waktu; ?></td>
                                   

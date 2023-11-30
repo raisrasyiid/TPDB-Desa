@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
           
-            <li class="nav-item active">
+            <li class="nav-item <?=($this->uri->segment(1)==='adminpanel')?'active':''?>">
                 <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/dashboard');?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -76,8 +76,8 @@
             </li> -->
 
             <!-- Nav Item - Data Penduduk -->
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="<?php echo site_url('penduduk/index');?>">
+            <li class="nav-item <?=($this->uri->segment(1)==='penduduk')?'active':''?>">
+                <a class="nav-link collapsed " href="<?php echo site_url('penduduk/index');?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data Penduduk</span>
                 </a>
@@ -85,7 +85,7 @@
 
 
 			 <!-- Nav Item - Pages Collapse Menu -->
-             <li class="nav-item">
+             <li class="nav-item <?=($this->uri->segment(1)==='surat')?'active':''?>">
                 <a class="nav-link collapsed" href="<?php echo site_url('surat/index');?>">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Surat</span>

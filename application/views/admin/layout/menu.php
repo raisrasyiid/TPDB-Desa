@@ -46,7 +46,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">role : <?php echo $this->session->userdata('role')?></h6>
+                <h6 class="text-dark">role : <?php echo $this->session->userdata('id_admin')?></h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -57,7 +57,6 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <?php echo $this->session->userdata('nama') ?>
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                 <img class="img-profile rounded-circle"
                     src="<?php echo base_url('assets/admin/img/undraw_profile.svg');?>">
