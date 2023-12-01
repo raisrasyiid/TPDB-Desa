@@ -84,20 +84,46 @@ class Admin extends CI_Controller
 
 	//tampil data user
 	public function tampil_user(){	
-		if(empty($this->session->userdata('id_admin'))){
+		if(empty($this->session->userdata('nama'))){
 			redirect('admin/index');
 		}
 
-		$data['trasaksi'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
-		$data['admin'] = $this->model_auth->get_all_data('tbl_admin')->result();
-		$data['user'] = $this->model_auth->get_all_data('tbl_user')->result();
+		// $data['transaksi'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
+		// $data['admin'] = $this->model_auth->get_all_data('tbl_admin')->result();
+		// $data['user'] = $this->model_auth->get_all_data('tbl_user')->result();
 
 		// join table
-		$data['tampil_admin'] = $this->model_auth->join('tbl_transaksi', 'tbl_user', 'tbl_transaksi.id_transaksi=tbl_user.id_user')->result();
+		// $data['tampil_admin'] = $this->model_auth->join('tbl_transaksi', 'tbl_user', 'tbl_transaksi.id_transaksi=tbl_user.id_user')->result();
 
-		// $data['user'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
+		$data['tampil_admin'] = $this->model_auth->get_all_data('tbl_transaksi')->result();
 		$this->load->view('admin/layout/header');
         $this->load->view('admin/user/tampil', $data);
 		$this->load->view('admin/layout/footer');
 	}
+
+	public function ubah_status($id)
+    {
+        if (empty($this->session->userdata('id_admin'))) {
+            redirect('admin/index');
+        }
+        $dataWhere = array('id_transaksi' => $id);
+        $result = $this->model_auth->get_by_id('tbl_transaksi', $dataWhere)->row_object();
+        $status = $result->status;
+        if ($status == "Y") {
+            $dataUpdate = array('status' => "N", 'status_pembayaran' => 'belum bayar');
+        } else {
+            $dataUpdate = array('status' => "Y", 'status_pembayaran' =>'sudah bayar');
+        }
+        $this->model_auth->update('tbl_transaksi', $dataUpdate, 'id_transaksi', $id);
+        redirect('admin/tampil_user');
+    }
+
+	public function delete($id, $idToko){
+		if (empty($this->session->userdata('id_admin'))) {
+            redirect('admin/index');
+        }
+        $this->model_auth->delete('tbl_transaksi', 'id_transaksi', $id);
+        redirect('produk/index/'.$idToko);
+    }
+
 }
