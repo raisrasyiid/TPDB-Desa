@@ -33,7 +33,16 @@ class Adminpanel extends CI_Controller
 				'password' => $password,
 				'nama_desa' => $result->namadesa,
 			);
+
+			$insert_transaksi = array(
+				'id_user' =>  $result->id_user,
+				'status_pembayaran' => 'belum bayar',
+				'tenggat_waktu' => date('Y-m-d'),
+				'status' => 'N',
+			);
+
 			$this->session->set_userdata($data_session);
+			$this->model_auth->insert('tbl_transaksi', $insert_transaksi);
 			redirect('adminpanel/dashboard');
 		} else {
 			redirect('adminpanel/index');
@@ -105,8 +114,14 @@ class Adminpanel extends CI_Controller
 			'password'=>$password,
 			'nama_desa'=>$namadesa,
 		);
+		
+		// $dataInputTransaksi = array(
+		// 	'id_user' => $result->id_user,
+		// 	'status'=>'N',
+		// );
 
 		$this->model_auth->insert('tbl_user', $dataInput);
+		// $this->model_auth->insert('tbl_transaksi', $dataInputTransaksi);
 		redirect('adminpanel/index');
 	}
 

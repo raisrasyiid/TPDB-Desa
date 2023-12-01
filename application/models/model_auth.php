@@ -6,6 +6,12 @@ class Model_auth extends CI_Model{
 		$q = $this->db->get_where('tbl_user', array('username'=>$u, 'password'=>$p));
 		return $q;
 	}
+
+	public function cek_transaksi($u, $p){
+		$q = $this->db->get_where('tbl_user', array('username'=>$u, 'password'=>$p));
+		return $q;
+	}
+
   //login admin 
     public function cek_login_admin($u, $p){
 		$q = $this->db->get_where('tbl_admin', array('username'=>$u, 'password'=>$p));

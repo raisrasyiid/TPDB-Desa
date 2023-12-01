@@ -4,8 +4,10 @@
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-login-image"></div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img src="<?php echo base_url('assets/admin/img/undraw_profile.svg');?>" alt="responsive" class="p-4 img-fluid">
+                    </div>
+                    <div class="col-lg-6">
                         <div class="p-5">
                             <h1 class="text-xl-center fw-bold text-dark mb-4">Selamat datang!</h1>
                             <div class="text-center">
