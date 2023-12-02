@@ -121,7 +121,7 @@
                                     <td><?php echo $val->jumlah; ?></td>
                                     <td><?php echo $val->keadaan; ?></td>
                                     <td><img src="<?php echo base_url('./gambar' . $val->gambar); ?>" width="150" height="110"></td>
-                                    <!-- <td><?php echo $val->gamb  ar; ?></td> -->
+                                    <!-- <td><?php echo $val->gambar; ?></td> -->
                                     <td style="text-align:center">
                                         <div class="btn-group">
                                             <a href="<?php echo site_url('penduduk/get_by_id/'.$val->id_user);?>" class="btn btn-warning">Edit</a>
