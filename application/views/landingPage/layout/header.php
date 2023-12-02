@@ -40,7 +40,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block">Sidigi<span class="text-secondary">Des</span></h1>
+                        <h1 class="text-white fw-bold d-block">SIDIG<span class="text-secondary">DES</span></h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -49,12 +49,12 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="#" id="" class="nav-item nav-link active text-secondary">Beranda</a>
                             <a href="#tentangKami" class="nav-item nav-link">Tentang Kami</a>
-                            <a href="#project" class="nav-item nav-link">Project</a>
+                            <!-- <a href="#project" class="nav-item nav-link">Project</a> -->
                             <a href="#artikel" class="nav-item nav-link">Artikel</a>
                             <a href="#tim" class="nav-item nav-link">Tim</a>
                             <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                             <a href="#faq" class="nav-item nav-link">FAQ</a>
-                            <a href="#mitra" class="nav-item nav-link">Mitra</a>
+                            <!-- <a href="#mitra" class="nav-item nav-link">Mitra</a> -->
                             
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>

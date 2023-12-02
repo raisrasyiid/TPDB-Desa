@@ -112,7 +112,7 @@
 
 
         <!-- Project Start -->
-        <div class="container-fluid project py-5 mb-5" id="project">
+        <!--<div class="container-fluid project py-5 mb-5" id="project">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Project</h5>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Project End -->
 
 
@@ -174,15 +174,15 @@
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
+                            <img src="<?php echo base_url('assets/promosi/img/gambar4.png');?>" class="img-fluid w-100 rounded-top" alt="">
+                            <!--<span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span> -->
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                             </div>
                             <div class=" text-center position-relative px-3" style="margin-top: -25px;">
-                                <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <img src="<?php echo base_url('assets/promosi/img/testimonial-4.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                                 <h5 class="">By Daniel Martin</h5>
-                                <span class="text-secondary">24 March 2023</span>
-                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                <span class="text-secondary">09 August 2022</span>
+                                <p class="py-2">Urus Surat Administrasi Desa Menjadi Mudah</p>
                             </div>
                             <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
                                 <a href="#">read more</a>
@@ -191,15 +191,15 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
+                            <img src="<?php echo base_url('assets/promosi/img/gambar5.png');?>" class="img-fluid w-100 rounded-top" alt="">
+                            <!--<span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span> -->
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                             </div>
                             <div class=" text-center position-relative px-3" style="margin-top: -25px;">
-                                <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                                <h5 class="">By Daniel Martin</h5>
-                                <span class="text-secondary">24 March 2023</span>
-                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                <img src="<?php echo base_url('assets/promosi/img/testimonial-5.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By Sadam</h5>
+                                <span class="text-secondary">10 November 2022</span>
+                                <p class="py-2">Surat Menyurat Desa Berbasis Web</p>
                             </div>
                             <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
                                 <a href="#">read more</a>
@@ -208,15 +208,15 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="<?php echo base_url('assets/promosi/img/blog-1.jpg');?>" class="img-fluid w-100 rounded-top" alt="">
-                            <span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span>
+                            <img src="<?php echo base_url('assets/promosi/img/gambar6.png');?>" class="img-fluid w-100 rounded-top" alt="">
+                            <!--<span class="position-absolute px-4 py-3 bg-secondary text-white rounded" style="top: -28px; right: 20px;">Pelayanan</span> -->
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                             </div>
                             <div class=" text-center position-relative px-3" style="margin-top: -25px;">
                                 <img src="<?php echo base_url('assets/promosi/img/admin.jpg');?>" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                                <h5 class="">By Daniel Martin</h5>
+                                <h5 class="">By Andy Chow</h5>
                                 <span class="text-secondary">24 March 2023</span>
-                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                <p class="py-2">Web Desa Sebagai Media Informasi dan Promosi</p>
                             </div>
                             <div class="d-flex justify-content-center px-4 py-2 border bg-secondary rounded-bottom">
                                 <a href="#">read more</a>
@@ -245,7 +245,7 @@
                                     <img src="<?php echo base_url('assets/promosi/img/team-1.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
+                                    <h4 class="">Zasinda</h4>
                                     <p class="m-0">Designation</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
@@ -265,7 +265,7 @@
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
+                                    <p class="m-0">Rasyid</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -284,7 +284,7 @@
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
+                                    <p class="m-0">Annisa</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -295,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rounded team-item">
+                    <!--<div class="rounded team-item">
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
@@ -313,7 +313,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -345,7 +345,7 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Saya sangat senang dengan pelayanan dari website SIDIGIDES. kami mendapatkan fitur-fitur yang sesuai dengan apa yang kami minta. Semoga SIDIGIDES semakin maju dan sukses</p>
+                            <p class="mb-0">Saya sangat senang dengan pelayanan dari website SIDIGIDES. kami mendapatkan fitur-fitur yang sesuai dengan apa yang kami minta. Semoga SIDIGDES semakin maju dan sukses</p>
                         </div>
                     </div>
                     <div class="testimonial-item border p-4">
@@ -412,7 +412,8 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <strong>SIDIGDES adalah sebuah platform pelayanan publik yang berfokus terhadap pelayanan di tingkat pemerintah desa, Dengan berbagai platform pelayanan terpadu yang kami ciptakan bertujuan untuk mempermudah proses administratif, mempercepat pelayanan masyarakat di desa, sarana publikasi potensi desa, serta sebagai bentuk singkronisasi antara program pemerintah provinsi yakni menghadirkan layanan secara Cepat, Efektif, Efisien, Tanggap, Transparan.</strong>
+                    <!--</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.-->
                         </div>
                         </div>
                     </div>
@@ -449,7 +450,7 @@
         <div class="container-fluid py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h1 class="mb-3">Tertarik Menggunakan Sidigides?</h1>
+                    <h1 class="mb-3">Tertarik Menggunakan SIDIGDES?</h1>
                     <div class="d-grid gap-2 d-md-block mt-4">
                         <a href="<?php echo site_url('adminpanel/index');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
                         <a href="<?php echo site_url();?>" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>

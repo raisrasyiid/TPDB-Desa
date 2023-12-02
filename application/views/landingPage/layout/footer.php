@@ -4,7 +4,7 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <a href="index.html">
-                            <h1 class="text-white fw-bold d-block">Sidigi<span class="text-secondary">Des</span> </h1>
+                            <h1 class="text-white fw-bold d-block">SIDIG<span class="text-secondary">DES</span> </h1>
                         </a>
                         <p class="mt-4 text-light">SIDIGDES adalah sebuah platform pelayanan publik yang berfokus terhadap pelayanan di tingkat pemerintah desa.</p>
                         <div class="d-flex hightech-link">
@@ -19,7 +19,7 @@
                         <div class="mt-4 d-flex flex-column short-link">
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Tentang Kami</a>
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Kontak</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Project Yang Dikerjakan</a>
+                            <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Project Yang Dikerjakan</a> -->
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Artikel</a>
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Tim Kami</a>
                         </div>
