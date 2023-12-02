@@ -38,7 +38,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">id desa : <?php echo $this->session->userdata('id_admin') ?>  </h6>
+                <h6 class="text-dark">nama admin : <?php echo $this->session->userdata('nama')?></h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -102,34 +102,37 @@
                     <table class="table table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr class="active">
-                                <th style="text-align:center">No</th>
+                                <th style="text-align:center">#</th>
                                 <th style="text-align:center">ID Transaksi</th>
                                 <th style="text-align:center">ID User</th>
                                 <!-- <th style="text-align:center">Username</th>
-                                <th style="text-align:center">Password</th> -->
-                                <!-- <th style="text-align:center">Nama Desa</th> -->
+                                <th style="text-align:center">Password</th>
+                                <th style="text-align:center">Nama Desa</th> -->
                                 <th style="text-align:center">Status (bayar/belum bayar)</th>
                                 <th style="text-align:center">Tenggat Waktu</th>
-                                <th style="width: 40px">Aksi</th>
+                                <th style="text-align:center">Status Aktif</th>
+                                <th style="text-align:center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($user as $val) { ?>
+                            foreach ($tampil_admin as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
                                     <td><?php echo $val->id_transaksi; ?></td>
                                     <td><?php echo $val->id_user; ?></td>
                                     <!-- <td><?php echo $val->username; ?></td>
-                                    <td><?php echo $val->password; ?></td> -->
+                                    <td><?php echo $val->password; ?></td>
+                                    <td><?php echo $val->nama_desa; ?></td> -->
                                     <td><?php echo $val->status_pembayaran; ?></td>
                                     <td><?php echo $val->tenggat_waktu; ?></td>
+                                    <td><?php echo $val->status; ?></td>
                                   
                                     <td style="text-align:center">
                                         <div class="btn-group">
+                                            <a href="<?php echo site_url('admin/ubah_status/'. $val->id_transaksi);?>" class="btn btn-info">Ubah Status</a>
                                             <a href="<?php echo site_url('admin/get_by_id/'.$val->id_user);?>" class="btn btn-warning">Edit</a>
                                             <a href="<?php echo site_url('admin/delete/'.$val->id_user);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
-                                            <!-- <a href="<?php echo site_url('admin/dashboard/'. $val->nik);?>" class="btn btn-info">Tampil</a> -->
                                         </div>
                                     </td>
                                 </tr>

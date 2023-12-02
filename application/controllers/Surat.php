@@ -16,8 +16,12 @@ class Surat extends CI_Controller
         // $data['surat'] = $this->model_auth->get_by_id('tbl_surat', $dataWhere)->result();
         // $data['kategori'] = $this->model_auth->get_all_data('tbl_user')->result();
 
+		$id = $this->session->userdata('id_user');
+        $dataWhere = array('id_user' => $id);
+        $get['penduduk']=$this->model_auth->get_by_id('tbl_surat', $dataWhere)->result();
+        
+
         $data['surat'] = $this->model_auth->get_all_data('tbl_surat')->result();
-		$data['user'] = $this->model_auth->get_all_data('tbl_user')->result();
 		$data['penduduk'] = $this->model_auth->get_all_data('tbl_penduduk')->result();
 
 		// join table

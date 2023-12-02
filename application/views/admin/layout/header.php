@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
           
-            <li class="nav-item active">
+            <li class="nav-item <?=($this->uri->segment(1)==='admin')?'active':''?>"">
                 <a class="nav-link collapsed" href="<?php echo site_url('admin/admin');?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -51,7 +51,7 @@
             </li>
 
             <!-- Nav Item - Data Penduduk -->
-            <li class="nav-item active">
+            <li class="nav-item <?=($this->uri->segment(1)==='admin')?'active':''?>"">
                 <a class="nav-link collapsed" href="<?php echo site_url('admin/tampil_user');?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data User</span>

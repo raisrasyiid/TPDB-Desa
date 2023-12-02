@@ -46,7 +46,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">role : <?php echo $this->session->userdata('role')?></h6>
+                <h6 class="text-dark">nama admin : <?php echo $this->session->userdata('nama')?></h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -57,7 +57,6 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <?php echo $this->session->userdata('nama') ?>
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                 <img class="img-profile rounded-circle"
                     src="<?php echo base_url('assets/admin/img/undraw_profile.svg');?>">
@@ -110,8 +109,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                               Data User</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $this->db->count_all_results('tbl_user'); ?></div>
+                               Data Transaksi</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $this->db->count_all('tbl_transaksi'); ?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-users fa-2x text-gray-300"></i>

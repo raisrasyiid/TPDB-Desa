@@ -16,8 +16,6 @@ class Penduduk extends CI_Controller
         $dataWhere = array('id_user' => $id);
         $data['penduduk']=$this->model_auth->get_by_id('tbl_penduduk', $dataWhere)->result();
         
-		// $id = $this->session->userdata('id_user');
-		// $data['penduduk']=$this->model_auth->get_all_data('tbl_penduduk')->result();
 		$this->load->view('adminDesa/layout/header');
 		$this->load->view('adminDesa/penduduk/tampil', $data);
 		$this->load->view('adminDesa/layout/footer');
