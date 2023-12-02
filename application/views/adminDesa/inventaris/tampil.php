@@ -38,7 +38,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">nama admin : <?php echo $this->session->userdata('nama')?></h6>
+                <h6 class="text-dark">id desa : <?php echo $this->session->userdata('id_user') ?>  </h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -70,7 +70,7 @@
                     Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?php echo site_url('admin/logout');?>">
+                <a class="dropdown-item" href="<?php echo site_url('adminpanel/logout');?>">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout
                 </a>
@@ -86,55 +86,46 @@
     <div class="container-fluid table-responsive">
         <!-- Page Heading -->
         <div class="box-header">
-            <h4 style="text-align:center"><b>DATA KELOLA USER</b></h4>
+            <h4 style="text-align:center"><b>DATA INVENTARIS</b></h4>
             <hr>
         </div>
         
-        <p>Halaman data kelola user menampilkan penduduk yang kemudian akan ditampilkan ke halaman home sehingga kategori barang dapat dilihat oleh pelanggan yang ingin membeli produk berdasarkan kategori.</p>
+        <p>Halaman data inventaris menampilkan penduduk yang kemudian akan ditampilkan ke halaman home sehingga kategori barang dapat dilihat oleh pelanggan yang ingin membeli produk berdasarkan kategori.</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-body">
-            <!-- <div class="card-footer clearfix">
-                    <a href="<?php echo site_url('admin/add_user'); ?>" class="btn btn-sm btn-info float-left">Tambah Penduduk</a>
-                </div> -->
+            <div class="card-footer clearfix">
+                    <a href="<?php echo site_url('inventaris/add'); ?>" class="btn btn-sm btn-info float-left">Tambah data</a>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr class="active">
-                                <th style="text-align:center">#</th>
-                                <th style="text-align:center">ID Transaksi</th>
-                                <th style="text-align:center">ID User</th>
-                                <!-- <th style="text-align:center">Username</th>
-                                <th style="text-align:center">Password</th>
-                                <th style="text-align:center">Nama Desa</th> -->
-                                <th style="text-align:center">Status (bayar/belum bayar)</th>
-                                <th style="text-align:center">Tenggat Waktu</th>
-                                <th style="text-align:center">Status Aktif</th>
-                                <th style="text-align:center">Aksi</th>
+                                <th style="width: auto">No</th>
+                                <th style="text-align:center">ID Inventaris</th>
+                                <th style="text-align:center">Nama</th>
+                                <th style="text-align:center">Jumlah</th>
+                                <th style="text-align:center">Keadaaan</th>
+                                <th style="text-align:center">Gambar</th>
+                                <th style="width: 40px">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1;
-                            foreach ($tampil_admin as $val) { ?>
+                            foreach ($inventaris as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
-                                    <td><?php echo $val->id_transaksi; ?></td>
-                                    <td><?php echo $val->id_user; ?></td>
-                                    <!-- <td><?php echo $val->username; ?></td>
-                                    <td><?php echo $val->password; ?></td>
-                                    <td><?php echo $val->nama_desa; ?></td> -->
-                                    <td><?php echo $val->status_pembayaran; ?></td>
-                                    <td><?php echo $val->tenggat_waktu; ?></td>
-                                    <td><?php echo $val->status; ?></td>
-                                  
+                                    <td><?php echo $val->id_inventaris; ?></td>
+                                    <td><?php echo $val->nama; ?></td>
+                                    <td><?php echo $val->jumlah; ?></td>
+                                    <td><?php echo $val->keadaan; ?></td>
+                                    <td><img src="<?php echo base_url('./gambar' . $val->gambar); ?>" width="150" height="110"></td>
+                                    <!-- <td><?php echo $val->gamb  ar; ?></td> -->
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('admin/ubah_status/'. $val->id_transaksi);?>" class="btn btn-info">Ubah Status</a>
-                                            <!-- <a href="<?php echo site_url('admin/get_by_id/'.$val->id_user);?>" class="btn btn-warning">Edit</a> -->
-                                            <a href="<?php echo site_url('admin/delete/'.$val->id_user. '/'.$val->id_transaksi);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
-                                            <!-- <a href="<?php echo site_url('produk/delete/' . $val->idProduk . '/' . $val->idToko); ?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-outline-danger">Hapus</a> -->
-
+                                            <a href="<?php echo site_url('penduduk/get_by_id/'.$val->id_user);?>" class="btn btn-warning">Edit</a>
+                                            <a href="<?php echo site_url('penduduk/delete/'.$val->id_user);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
                                         </div>
                                     </td>
                                 </tr>

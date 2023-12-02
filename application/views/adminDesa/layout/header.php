@@ -91,6 +91,14 @@
                     <span>Surat</span>
                 </a>
             </li>
+
+			 <!-- Nav Item - Pages Collapse Menu -->
+             <li class="nav-item <?=($this->uri->segment(1)==='inventaris')?'active':''?>">
+                <a class="nav-link collapsed" href="<?php echo site_url('inventaris/index');?>">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Data Inventaris</span>
+                </a>
+            </li>
 			 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo site_url('adminpanel/logout');?>">

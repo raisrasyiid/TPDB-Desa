@@ -62,11 +62,8 @@ class Model_auth extends CI_Model{
         return $this->db->get($table);
     }
 
-	//detail penduduk
-	// public function detail($id = NULL)
-	// {
-	// 	$query = $this->db->get_where('kependudukan', array('nik' => $id))->row_array();
-	// 	return $query;
-	// }
-
+	// public function isUserActive($username) {
+    //     $user = $this->db->get_where('tbl_transaksi', ['id_user' => $username])->row();
+    //     return ($user && $user->status == 'Y');
+    // }
 }

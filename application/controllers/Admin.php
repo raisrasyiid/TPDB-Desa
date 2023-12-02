@@ -122,8 +122,8 @@ class Admin extends CI_Controller
 		if (empty($this->session->userdata('id_admin'))) {
             redirect('admin/index');
         }
-        $this->model_auth->delete('tbl_transaksi', 'id_transaksi', $id);
-        redirect('produk/index/'.$idToko);
+        $this->model_auth->delete('tbl_transaksi', 'id_user', $id);
+        redirect('admin/tampil_user');
     }
 
 }

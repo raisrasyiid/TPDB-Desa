@@ -31,7 +31,7 @@ class Adminpanel extends CI_Controller
 				'id_user' =>  $result->id_user,
 				'username' => $username,
 				'password' => $password,
-				'nama_desa' => $result->namadesa,
+				'nama_desa' => $namadesa,
 			);
 
 			$insert_transaksi = array(
@@ -44,6 +44,16 @@ class Adminpanel extends CI_Controller
 			$this->session->set_userdata($data_session);
 			$this->model_auth->insert('tbl_transaksi', $insert_transaksi);
 			redirect('adminpanel/dashboard');
+
+			// if ($this->model_auth->isUserActive($username)) {
+			// }
+			// $dataWhere = array('id_user', $id);
+			// $data = $this->model_auth->get_by_id('tbl_transaksi', $dataWhere)->result();
+			// if($data ->status == 'N'){
+			// 	redirect('adminpanel/index');
+			// }else{
+			// redirect('adminpanel/dashboard');
+			// }
 		} else {
 			redirect('adminpanel/index');
 		}
@@ -78,8 +88,9 @@ class Adminpanel extends CI_Controller
 	public function dashboard()
 	{
         if(empty($this->session->userdata('id_user'))){
-			redirect('admin/index');
+			redirect('adminpanel/index');
 		}
+		
 
 		$this->load->view('adminDesa/layout/header');
         $this->load->view('adminDesa/layout/menu');
