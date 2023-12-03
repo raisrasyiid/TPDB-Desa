@@ -84,7 +84,7 @@ class Admin extends CI_Controller
 
 	//tampil data user
 	public function tampil_user(){	
-		if(empty($this->session->userdata('nama'))){
+		if(empty($this->session->userdata('id_admin'))){
 			redirect('admin/index');
 		}
 

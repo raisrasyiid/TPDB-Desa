@@ -120,12 +120,12 @@
                                     <td><?php echo $val->nama; ?></td>
                                     <td><?php echo $val->jumlah; ?></td>
                                     <td><?php echo $val->keadaan; ?></td>
-                                    <td><img src="<?php echo base_url('./gambar' . $val->gambar); ?>" width="150" height="110"></td>
+                                    <td><img src="<?php echo base_url('assets/gambar/' . $val->gambar); ?>" width="100" height="100"></td>
                                     <!-- <td><?php echo $val->gambar; ?></td> -->
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('penduduk/get_by_id/'.$val->id_user);?>" class="btn btn-warning">Edit</a>
-                                            <a href="<?php echo site_url('penduduk/delete/'.$val->id_user);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
+                                            <a href="<?php echo site_url('inventaris/edit/'.$val->id_inventaris);?>" class="btn btn-warning">Edit</a>
+                                            <a href="<?php echo site_url('inventaris/delete/'.$val->id_inventaris);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
                                         </div>
                                     </td>
                                 </tr>

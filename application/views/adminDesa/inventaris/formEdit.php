@@ -10,7 +10,7 @@
         </button>
 
         <!-- Topbar Search -->
-        <h1 class="h3 mb-0 text-gray-800">Halaman Tambah Inventaris</h1>
+        <h1 class="h3 mb-0 text-gray-800">Halaman Edit Inventaris</h1>
     
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -181,37 +181,43 @@
 <!-- Contact Start -->
 <div class="container-fluid">
     <div class="latest-product__text mb-4">
-        <h4 class="section-title px-5">Form Tambah Inventaris</h4>
-        <p class="mb-4 px-5">Halaman tambah inventaris untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
+        <h4 class="section-title px-5">Form Edit Iventaris</h4>
+        <p class="mb-4 px-5">Halaman edit Inventaris untuk menambah alamat user yang kemudian akan ditampilkan ke halaman home sehingga informasi pada blog dapat dilihat oleh pelanggan yang ingin melihat konten edukasi.</p>
     </div>
     <div class="row px-xl-5">
         <div class="col-lg-7 mb-5">
             <div class="contact-form">
-                <form name="sentMessage" method="post" action="<?php echo site_url('inventaris/save'); ?>" enctype="multipart/form-data" autocomplete="off">
-                    <div class="control-group">
+                <form name="sentMessage" method="post" action="<?php echo site_url('inventaris/save_edit'); ?>" enctype="multipart/form-data" autocomplete="off">
+                <input type="hidden" name="id_inventaris" value="<?php echo $inventaris->id_inventaris; ?>">
+                <div class="control-group">
                         <label>Nama Inventaris</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" data-validation-required-message="Please enter your nik" />
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" autofocus required="required" data-validation-required-message="Please enter your nik" 
+                        value="<?php echo $inventaris->nama; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                         <label>Jumlah</label>
-                        <input type="text" class="form-control" id="jumlah" name="jumlah" placeholder="Jumlah" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" class="form-control" id="jumlah" name="jumlah" placeholder="Jumlah" autofocus required="required" data-validation-required-message="Please enter your name" 
+                        value="<?php echo $inventaris->jumlah; ?>"/>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
                     <label for="jenis_kelamin">Keadaan</label>
-                        <select name="keadaan" class="form-control" required>
+                        <select name="keadaan" class="form-control" required value="<?php echo $inventaris->keadaan; ?>">
                             <option value="" selected disabled>- pilih -</option>
                             <option value="baik" name="laki-laki">Baik</option>
                             <option value="tidak baik" name="perempuan">Tidak Baik</option>
                         </select>
                     </div>
+                    <div>
+                        <img src="<?php echo base_url('assets/gambar/' . $inventaris->gambar);?>" alt="gambar" width="100" height="100">
+                    </div>
                     <div class="control-group">
                         <label>gambar</label>
-                        <input type="file" class="form-control" id="gambar" name="gambar" placeholder="gambar" autofocus required="required" data-validation-required-message="Please enter your name" />
+                        <input type="file" class="form-control" id="gambar" name="gambar" placeholder="gambar" autofocus required="required" data-validation-required-message="Please enter your name"
+                        value="<?php echo $inventaris->gambar; ?>" />
                         <p class="help-block text-danger"></p>
                     </div>
-                    <br>
                     <div>
                         <button class="btn bnt-sm btn-info float-left" type="submit" id="sendMessageButton">Simpan</button>
                         <button onClick="goBack()".GoBack  class="btn btn-danger"> Kembali</button>
