@@ -106,8 +106,8 @@
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">Buat Landing Page Sistem Desa Anda</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Dengan adanya landing page masyarakat desa anda dapat lebih mudah dalam mengakses informasi desa anda</p>
-                                <a href="<?php echo site_url('adminpanel/index');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
-                                <a href="#" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScE3F1XzPW_jC2_pheVIDJiAgS3fTKOUaVZi_SFor96elBU8w/viewform?usp=sf_link" target="_blank" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScE3F1XzPW_jC2_pheVIDJiAgS3fTKOUaVZi_SFor96elBU8w/viewform?usp=sf_link" target="_blank" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
                         </div>
                     </div>
@@ -118,8 +118,8 @@
                                 <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Transformasi Digital Desa</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Perluas jangkauan, lakukan percepatan pelayanan dengan sistem informasi desa</p>
-                                <a href="<?php echo site_url('adminpanel/index');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
-                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScE3F1XzPW_jC2_pheVIDJiAgS3fTKOUaVZi_SFor96elBU8w/viewform?usp=sf_link" target="_blank" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill animated fadeInLeft">Berlangganan</button></a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScE3F1XzPW_jC2_pheVIDJiAgS3fTKOUaVZi_SFor96elBU8w/viewform?usp=sf_link" target="_blank" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill animated fadeInRight">Request Demo</button></a>
                             </div>
                         </div>
                     </div>

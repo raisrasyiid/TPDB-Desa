@@ -88,15 +88,15 @@ class Adminpanel extends CI_Controller
 	public function dashboard()
 	{
 		$id = $this->session->userdata('id_user');
-		$dataWhere = array('id_transaksi'=>$id);
-
-		$cek = $this->model_auth->get_by_id('tbl_transaksi', $dataWhere)->result();
-		if($cek->STATUS == 'N'){
+		$dataWhere = array('id_user'=>$id);
+		$cek = $this->model_auth->get_by_id('tbl_transaksi', $dataWhere)->row_object();
+		if($cek->status_pembayaran == 'belum bayar' || $cek->status == 'N'){
 			redirect('adminpanel/index');
-		}
+		}else{
 		$this->load->view('adminDesa/layout/header');
         $this->load->view('adminDesa/layout/menu');
         $this->load->view('adminDesa/layout/footer');
+		}
 	}
 
 	//logout

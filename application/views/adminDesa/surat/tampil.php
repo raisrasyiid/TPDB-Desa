@@ -38,7 +38,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <h6 class="text-dark">nama desa : <?php echo $this->session->userdata('id_user') ?> </h6>
+                <h6 class="text-dark">id desa : <?php echo $this->session->userdata('id_user') ?> </h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
@@ -113,12 +113,13 @@
                                 <th style="text-align:center">Aksi</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <?php $no = 1;
                             foreach ($tampil_surat as $val) { ?>
                                 <tr style="text-align:center">
                                     <td><?php echo $no; ?></td>
-                                    <td><?php echo $val->id_user; ?></td>
+                                    <td><?php echo $val->id_penduduk; ?></td>
                                     <td><?php echo $val->nik; ?></td>
                                     <td><?php echo $val->nama; ?></td>
                                     <td><?php echo $val->jenis_surat; ?></td>
@@ -127,9 +128,9 @@
                                     <td><?php echo $val->status; ?></td>
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('penduduk/get_by_id/'.$val->id_penduduk);?>" class="btn btn-warning">Edit</a>
-                                            <a href="<?php echo site_url('penduduk/delete/'.$val->id_penduduk);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
-                                            <!-- <a href="<?php echo site_url('penduduk/dashboard/'. $val->nik);?>" class="btn btn-info">Tampil</a> -->
+                                            <a href="<?php echo site_url('surat/get_by_id/'.$val->id_penduduk);?>" class="btn btn-warning">Edit</a>
+                                            <a href="<?php echo site_url('surat/delete/'.$val->id_surat);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
+                                            <!-- <a href="<?php echo site_url('surat/dashboard/'. $val->id_penduduk);?>" class="btn btn-info">Tampil</a> -->
                                         </div>
                                     </td>
                                 </tr>

@@ -35,14 +35,13 @@
                 </div>
             </li>
 
-        <li class="nav-item dropdown no-arrow mx-1">
-            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+            <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <h6 class="text-dark">id desa : <?php echo $this->session->userdata('id_user') ?>  </h6>
                 <span class="mr-2 d-none d-lg-inline text-grey-600 small"></span>
             </a>
         </li>
-        
 
             <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -77,7 +76,7 @@
 
     </nav>
     <!-- End of Topbar -->
-
+    
 <!-- Contact Start -->
 <div class="container-fluid">
     <div class="latest-product__text mb-4">
@@ -89,25 +88,22 @@
             <div class="contact-form">
                 <form name="sentMessage" method="post" action="<?php echo site_url('surat/save'); ?>" enctype="multipart/form-data" autocomplete="off">
                 <div class="control-group">
-                <label for="status">Data Pendududuk</label>
-                <select name="nik" class="form-control" id="nama" required>
-						<?php
-                            foreach ($cek as $val):
-                        ?>
-					<option value="<?php echo $val->id_penduduk; ?>">
-                        <?php echo $val->nik; ?> - <?php echo $val->nama; ?>
+                <label for="status">Data Penduduk</label>
+                <select name="id_penduduk" class="form-control" id="nama" required>
+                    <?php foreach ($penduduk as $data): ?>
+                        <option value="<?php echo $data->id_penduduk; ?>">
+                            <?php echo $data->nik; ?> - <?php echo $data->nama; ?>
                         </option>
-						<?php
-                            endforeach;
-                        ?>
-					  </select>
-                    <label for="status">Jenis Surat</label>
+                    <?php endforeach; ?>
+                </select>
+
+                        <label for="status">Jenis Surat</label>
                         <select name="jenis_surat" class="form-control" required id="status">
                             <option value="" selected disabled>- pilih -</option>
-                            <option value="kelahiran" name="kelahiran">SK kelahiran</option>
-                            <option value="kematian" name="kematian">SK kematian</option>
-                            <option value="penghasilan" name="penghasilan">SK penghasilan</option>
-                            <option value="domisili" name="domisili">SK domisili</option>
+                            <option value="kematian" name="kematian">surat kematian</option>
+                            <option value="domisili" name="domisili">surat domisili</option>
+                            <option value="kelahiran" name="kelahiran">surat kelahiran</option>
+                            <option value="penghasilan" name="penghasilan">surat penghasilan</option>
                         </select>
                     </div>
                     <div class="control-group">
@@ -124,9 +120,9 @@
                     <label for="status">Status</label>
                         <select name="status" class="form-control" required id="status">
                             <option value="" selected disabled>- pilih -</option>
-                            <option value="selesai" name="selesai">proses</option>
-                            <option value="sedang proses" name="sedang proses">sedang di proses</option>
                             <option value="selesai" name="selesai">selesai</option>
+                            <option value="proses" name="proses">proses</option>
+                            <option value="belum proses" name="belumproses">belum proses</option>
                         </select>
                     </div>
                     <div class="mt-4">

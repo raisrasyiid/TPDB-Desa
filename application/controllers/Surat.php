@@ -10,58 +10,107 @@ class Surat extends CI_Controller
 	}
 
 	public function index()
-	{
-		// $id = $this->session->userdata('id_user');
-        // $dataWhere = array('id_user' => $id);
-        // $data['surat'] = $this->model_auth->get_by_id('tbl_surat', $dataWhere)->result();
-        // $data['kategori'] = $this->model_auth->get_all_data('tbl_user')->result();
+    {
+    $id = $this->session->userdata('id_user');
+    $dataWhere = array('id_user' => $id);
+    $get['surat'] = $this->model_auth->get_by_id('tbl_surat', $dataWhere)->result();
 
-		$id = $this->session->userdata('id_user');
-        $dataWhere = array('id_user' => $id);
-        $get['penduduk']=$this->model_auth->get_by_id('tbl_surat', $dataWhere)->result();
-        
+    // Ambil data dari tbl_surat
+    $data['surat'] = $this->model_auth->get_all_data('tbl_surat')->result();
 
-        $data['surat'] = $this->model_auth->get_all_data('tbl_surat')->result();
-		$data['penduduk'] = $this->model_auth->get_all_data('tbl_penduduk')->result();
+    // Ambil data dari tbl_penduduk
+    $data['penduduk'] = $this->model_auth->get_all_data('tbl_penduduk')->result();
 
-		// join table
-		$data['tampil_surat'] = $this->model_auth->join('tbl_surat', 'tbl_penduduk', 'tbl_surat.id_surat=tbl_penduduk.id_penduduk')->result();
+    // Join tbl_surat dengan tbl_penduduk berdasarkan kunci yang sesuai
+    $data['tampil_surat'] = $this->model_auth->join('tbl_surat', 'tbl_penduduk', 'tbl_surat.id_penduduk=tbl_penduduk.id_penduduk')->result();
 
-		$this->load->view('adminDesa/layout/header');
-		$this->load->view('adminDesa/surat/tampil', $data);
-		$this->load->view('adminDesa/layout/footer');
-	}
+    $this->load->view('adminDesa/layout/header');
+    $this->load->view('adminDesa/surat/tampil', $data);
+    $this->load->view('adminDesa/layout/footer');
+}
+	
+public function add(){
+    $data['penduduk'] = $this->model_auth->get_all_data('tbl_penduduk')->result();
 
-    public function add(){
-        $id = $this->session->userdata('id_user');
-        $dataWhere = array('id_user' => $id);
-        // $dataPenduduk = array('id_penduduk' => $id);
-        $data['surat'] = $this->model_auth->get_by_id('tbl_surat', $dataWhere)->row_object();
-        // $data['cek'] = $this->model_auth->get_by_id('tbl_penduduk', $dataPenduduk)->row_object();
-		$data['cek'] = $this->model_auth->join('tbl_user', 'tbl_penduduk', 'tbl_user.id_user=tbl_penduduk.id_penduduk')->result();
-        
-        $this->load->view('adminDesa/layout/header');
-        $this->load->view('adminDesa/surat/formAdd', $data);
-        $this->load->view('adminDesa/layout/footer');
+    $this->load->view('adminDesa/layout/header');
+    $this->load->view('adminDesa/surat/formAdd', $data);
+    $this->load->view('adminDesa/layout/footer');
+}
+
+public function save(){
+    $id_user = $this->session->userdata('id_user');
+    $jenis_surat = $this->input->post('jenis_surat');
+    $keperluan = $this->input->post('keperluan');
+    $tanggal = $this->input->post('tanggal');
+    $status = $this->input->post('status');
+    $id_penduduk = $this->input->post('id_penduduk'); 
+    
+    $is_valid_penduduk = $this->model_auth->get_by_id('tbl_penduduk', array('id_penduduk' => $id_penduduk))->row();
+
+    if(!$is_valid_penduduk) {
+        echo "Data penduduk dengan ID $id_penduduk tidak valid.";
+        return;
     }
 
-    public function save(){
-		$id = $this->session->userdata('id_user');
-		$nik = $this->input->post('nik');
+    $dataInput = array(
+        'id_user' => $id_user,
+        'jenis_surat' => $jenis_surat,
+        'keperluan' => $keperluan,
+        'tanggal' => $tanggal,
+        'status' => $status,
+        'id_penduduk' => $id_penduduk 
+    );
+
+    $this->model_auth->insert('tbl_surat', $dataInput);
+    redirect('surat/index');
+}
+
+
+	public function get_by_id($id_penduduk) {
+		if (empty($this->session->userdata('id_user'))) {
+			redirect('adminpanel/index');
+		}
+		
+		// Ambil data dari tabel tbl_surat berdasarkan id_penduduk
+		$dataWhere = array('id_penduduk' => $id_penduduk);
+		$data['surat'] = $this->model_auth->get_by_id('tbl_surat', $dataWhere)->row_object();
+	
+		if (!$data['surat']) {
+			echo "Data surat untuk penduduk dengan ID $id_penduduk tidak ditemukan."; 
+			return;
+		}
+	
+		$this->load->view('adminDesa/layout/header');
+		$this->load->view('adminDesa/surat/formEdit', $data);
+		$this->load->view('adminDesa/layout/footer');
+	}
+	
+
+	public function update(){
+		$id_surat = $this->input->post('id_surat'); 
+	
+		$id_user = $this->session->userdata('id_user');
 		$jenis_surat = $this->input->post('jenis_surat');
 		$keperluan = $this->input->post('keperluan');
 		$tanggal = $this->input->post('tanggal');
 		$status = $this->input->post('status');
-
-		$dataInput = array(
-			'id_user' => $id,
+	
+		$dataUpdate = array(
+			'id_user' => $id_user,
 			'jenis_surat' => $jenis_surat,
 			'keperluan' => $keperluan,
 			'tanggal' => $tanggal,
-			'status' => $status
+			'status' => $status,
 		);
-			$this->model_auth->insert('tbl_surat',$dataInput);
-			redirect('surat/index');
+	
+		$this->model_auth->update('tbl_surat', $dataUpdate, 'id_surat', $id_surat);
+	
+		redirect('surat/index');
+	}
+	
+	//delete
+	public function delete($id_surat){
+        $this->model_auth->delete('tbl_surat', 'id_surat', $id_surat);
+        redirect('surat/index');
     }
-
 }
