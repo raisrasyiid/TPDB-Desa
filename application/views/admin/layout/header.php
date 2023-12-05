@@ -57,6 +57,13 @@
                     <span>Data User</span>
                 </a>
             </li>
+            <!-- Nav Item - Data Penduduk -->
+            <li class="nav-item <?=($this->uri->segment(1)==='admin')?'active':''?>"">
+                <a class="nav-link collapsed" href="<?php echo site_url('admin/tampil_transaksi');?>">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Data Transaksi</span>
+                </a>
+            </li>
 
 
 			 

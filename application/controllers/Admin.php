@@ -119,4 +119,12 @@ class Admin extends CI_Controller
         redirect('admin/tampil_user');
     }
 
+	public function tampil_transaksi()
+	{
+		$data['midtrans'] = $this->db->get('tbl_midtrans')->result();
+		$this->load->view('admin/layout/header');
+        $this->load->view('admin/transaksi/tampil', $data);
+		$this->load->view('admin/layout/footer');
+	}
+
 }
