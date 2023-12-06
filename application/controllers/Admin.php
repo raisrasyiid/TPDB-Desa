@@ -73,6 +73,11 @@ class Admin extends CI_Controller
 
 	//tampil halaman login
 	public function admin(){
+
+		if (empty($this->session->userdata('id_admin'))) {
+            redirect('admin/index');
+        }
+		
 		$this->load->view('admin/layout/header');
         $this->load->view('admin/layout/menu');
 		$this->load->view('admin/layout/footer');
@@ -125,6 +130,11 @@ class Admin extends CI_Controller
 		$this->load->view('admin/layout/header');
         $this->load->view('admin/transaksi/tampil', $data);
 		$this->load->view('admin/layout/footer');
+	}
+
+	public function delete_trans($id) {
+		$this->model_auth->delete('tbl_midtrans', 'order_id', $id);
+        redirect('admin/tampil_transaksi');
 	}
 
 }

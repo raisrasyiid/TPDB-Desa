@@ -114,6 +114,7 @@
                                 <th style="text-align:center">Transaction Time</th>
                                 <th style="text-align:center">Status Code</th>
                                 <th style="text-align:center">Download Pdf</th>
+                                <th style="text-align:center">Delete</th>
                                
                             </tr>
                         </thead>
@@ -133,7 +134,7 @@
                                     <td><?php echo $val->transaction_time; ?></td>
                                     <td>
                                         <?php
-                                        if($val->status_code =="201"){?>
+                                        if($val->status_code == "201"){?>
                                             <span class="badge bg-success">Success</span>
                                         <?php
                                         }else {
@@ -145,14 +146,16 @@
                                         ?>
                                        
                                     </td>
+
+                                    <td style="text-align:center">
+                                        <div class="btn-group">
+                                        <a href="<?php echo $val->pdf_url?>" class="badge bg-info">Download</a>
+                                    </div>
+                                    </td>
                                   
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                          
-                                            <a href="<?php echo $val->pdf_url?>" class="btn btn-success">Download</a>
-                                            <!-- <a href="#" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a> -->
-                                           
-
+                                            <a href="<?php echo site_url('admin/delete_trans/'.$val->order_id);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
                                         </div>
                                     </td>
                                 </tr>
