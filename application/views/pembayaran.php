@@ -21,7 +21,7 @@
 
 
 
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-4 p-4">
         <h2 class="text-center">Data Pembayaran SI Desa</h2>
         <form id="payment-form" method="post" action="<?=site_url()?>/snap/finish">
             <input type="hidden" name="result_type" id="result-type" value=""></div>
