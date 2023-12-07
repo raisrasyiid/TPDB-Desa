@@ -50,20 +50,21 @@
                             <a href="#" id="" class="nav-item nav-link active text-secondary">Beranda</a>
                             <a href="#tentangKami" class="nav-item nav-link">Tentang Kami</a>
                             <!-- <a href="#project" class="nav-item nav-link">Project</a> -->
+                            <a href="#biaya" class="nav-item nav-link">Biaya</a>
                             <a href="#artikel" class="nav-item nav-link">Artikel</a>
                             <a href="#tim" class="nav-item nav-link">Tim</a>
                             <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                             <a href="#faq" class="nav-item nav-link">FAQ</a>
                             <!-- <a href="#mitra" class="nav-item nav-link">Mitra</a> -->
                             
-                            <div class="nav-item dropdown">
+                            <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="#" class="dropdown-item">Landing Page Desa</a>
                                     <a href="#" class="dropdown-item">Administrasi Desa</a>
                                     <a href="#" class="dropdown-item">Pelayanan Desa</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <a href="#" class="nav-item nav-link">Kontak</a>
                             <a href="<?php echo site_url('adminpanel/index'); ?>" class="nav-item nav-link">Login</a>
 

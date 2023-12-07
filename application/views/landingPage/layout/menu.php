@@ -24,22 +24,23 @@
 
 
         <!-- Services Start -->
-        <!-- <div class="container-fluid services py-5 mb-5">
+        <div class="container-fluid services py-5 mb-5" id="biaya">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Fitur</h5>
-                    <h1>Fitur</h1>
-                    <p class="mt-4">Berikut adalah beberapa fitur-fitur yang bisa anda dapatkan dengan pelayanan kami</p>
+                    <h5 class="text-primary">Biaya </h5>
+                    <h1>Biaya Berlangganan</h1>
+                    <p class="mt-4">Berikut adalah beberapa pilihan biaya berlangganan yang bisa anda dapatkan dengan pelayanan kami</p>
                 </div>
                 <div class="row g-5 services-inner">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <img src="<?php echo base_url('assets/promosi/img/fitur1.png');?>" alt="gambar" width="300px">
-                                    <h4 class="mb-3">Web Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                    <img src="<?php echo base_url('assets/promosi/img/lite.png');?>" alt="gambar" width="300px">
+                                    <h2 class="mb-3 mt-4">Paket Lite</h2>
+                                    <h4 class="mb-3 mt-4">Rp. 20.000</h4>
+                                    <p class="mb-4">dengan biaya 20.000 anda mendapatkan fasilitas berupa admin kelola desa selama 1 bulan</p>
+                                    <a href="<?php echo site_url('snap/pembayaran');?>" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Selengkapnya</a>
                                 </div>
                             </div>
                         </div> 
@@ -48,10 +49,11 @@
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Development</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                <img src="<?php echo base_url('assets/promosi/img/premium.png');?>" alt ="gambar2" width="300px">
+                                    <h2 class="mb-3 mt-4">Paket Premium</h2>
+                                    <h4 class="mb-3 mt-4">Rp. 50.000</h4>
+                                    <p class="mb-4">dengan biaya 50.000 anda mendapatkan fasilitas berupa admin kelola desa selama 3 bulan</p>
+                                    <a href="<?php echo site_url('snap/pembayaran');?>" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -60,54 +62,18 @@
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">UI/UX Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Cecurity</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Digital Marketing</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Programming</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                <img src="<?php echo base_url('assets/promosi/img/exlusive.png');?>" alt="gambar3" width="300px">
+                                    <h2 class="mb-3 mt-4">Paket Exslusive</h2>
+                                    <h4 class="mb-3 mt-4">Rp. 100.000</h4>
+                                    <p class="mb-4">dengan biaya 100.000 anda mendapatkan fasilitas berupa admin kelola desa selama 6 bulan</p>
+                                    <a href="<?php echo site_url('snap/pembayaran');?>" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div> 
         <!-- Services End -->
 
 
@@ -246,7 +212,7 @@
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Zasinda</h4>
-                                    <p class="m-0">Designation</p>
+                                    <p class="m-0">Coder</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -264,8 +230,8 @@
                                     <img src="<?php echo base_url('assets/promosi/img/team-2.jpg"');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Rasyid</p>
+                                    <h4 class="">Rasyiid</h4>
+                                    <p class="m-0">Coder</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -283,8 +249,8 @@
                                     <img src="<?php echo base_url('assets/promosi/img/team-3.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Annisa</p>
+                                    <h4 class="">Annisa</h4>
+                                    <p class="m-0">Hipster</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -425,7 +391,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>SIDIGDES memiliki beberapa fitur yaitu pengelolaan data penduduk, data penyuratan, serta data inventaris desa</strong> 
                         </div>
                         </div>
                     </div>
@@ -437,7 +403,7 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>silahkan langsung klik tombol <span class="text-warning">"Berlangganan"</span> agar anda dapat langsung menggunakan website ini.</strong> 
                         </div>
                         </div>
                     </div>
@@ -452,8 +418,8 @@
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h1 class="mb-3">Tertarik Menggunakan SIDIGDES?</h1>
                     <div class="d-grid gap-2 d-md-block mt-4">
-                        <a href="<?php echo site_url('adminpanel/index');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
-                        <a href="<?php echo site_url();?>" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
+                        <a href="<?php echo site_url('snap/pembayaran');?>" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-warning rounded-pill  animated fadeInLeft">Berlangganan</button></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScE3F1XzPW_jC2_pheVIDJiAgS3fTKOUaVZi_SFor96elBU8w/viewform?usp=sf_link" target="_blank" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Request Demo</button></a>
                     </div>
 
                    
