@@ -208,10 +208,10 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="<?php echo base_url('assets/promosi/img/team-1.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/zasinda.jpeg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Zasinda</h4>
+                                    <h4 class="">Zasinda Yasmine</h4>
                                     <p class="m-0">Coder</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
@@ -227,10 +227,10 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="<?php echo base_url('assets/promosi/img/team-2.jpg"');?>" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/test.jpg"');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Rasyiid</h4>
+                                    <h4 class="">Rais Rasyiid</h4>
                                     <p class="m-0">Coder</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
@@ -246,10 +246,10 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="<?php echo base_url('assets/promosi/img/team-3.jpg');?>" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="<?php echo base_url('assets/promosi/img/acha.jpeg');?>" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Annisa</h4>
+                                    <h4 class="">Annisa Latifa</h4>
                                     <p class="m-0">Hipster</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
@@ -299,8 +299,8 @@
                                 <img src="<?php echo base_url('assets/promosi/img/testimonial-1.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Sarah Viloid</h4>
-                                <p class="m-0 pb-3">Admin Desa Jumawa</p>
+                                <h4 class="text-secondary">Safira Andini</h4>
+                                <p class="m-0 pb-3">Admin Desa Mandau</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>
@@ -320,8 +320,8 @@
                                 <img src="<?php echo base_url('assets/promosi/img/testimonial-2.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Andy Chow</h4>
-                                <p class="m-0 pb-3">Kepala Desa</p>
+                                <h4 class="text-secondary">Andy Sukma</h4>
+                                <p class="m-0 pb-3">Kepala Desa Sukamaju</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>
@@ -332,7 +332,7 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">SIDIGDES sangat memberikan manfaat yang baik bagi perkembangan desa di Indonesia</p>
+                            <p class="mb-0">SIDIGDES sangat memberikan manfaat yang baik bagi perkembangan desa di Indonesia. saya sangat senang!. Semoga SIDIGDES semakin maju</p>
                         </div>
                     </div>
                     <div class="testimonial-item border p-4">
@@ -341,8 +341,8 @@
                                 <img src="<?php echo base_url('assets/promosi/img/testimonial-3.jpg');?>" alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-secondary">Sikaeee</h4>
-                                <p class="m-0 pb-3">Pegawai IT Desa</p>
+                                <h4 class="text-secondary">Siska</h4>
+                                <p class="m-0 pb-3">Pegawai IT Desa Sumilir</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star me-1 text-primary"></i>
                                     <i class="fas fa-star me-1 text-primary"></i>

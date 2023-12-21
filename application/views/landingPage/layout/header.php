@@ -65,7 +65,7 @@
                                     <a href="#" class="dropdown-item">Pelayanan Desa</a>
                                 </div>
                             </div> -->
-                            <a href="#" class="nav-item nav-link">Kontak</a>
+                            <!-- <a href="#" class="nav-item nav-link">Kontak</a> -->
                             <a href="<?php echo site_url('adminpanel/index'); ?>" class="nav-item nav-link">Login</a>
 
                         </div>

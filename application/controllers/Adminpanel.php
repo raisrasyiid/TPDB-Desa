@@ -102,7 +102,7 @@ class Adminpanel extends CI_Controller
 	//logout
 	public function logout(){
 		$this->session->sess_destroy();
-		redirect('adminpanel/index');
+		redirect('adminpanel');
 	}
 
 	//tampil halaman register

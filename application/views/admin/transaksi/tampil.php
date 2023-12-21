@@ -134,7 +134,7 @@
                                     <td><?php echo $val->transaction_time; ?></td>
                                     <td>
                                         <?php
-                                        if($val->status_code == "201"){?>
+                                        if($val->status_code == "200"){?>
                                             <span class="badge bg-success">Success</span>
                                         <?php
                                         }else {
