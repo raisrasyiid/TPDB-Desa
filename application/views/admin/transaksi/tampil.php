@@ -155,7 +155,7 @@
                                   
                                     <td style="text-align:center">
                                         <div class="btn-group">
-                                            <a href="<?php echo site_url('admin/delete_trans/'.$val->order_id);?>" onclick="return confirm('Yakin Akan Menghapus Data ini? - Admin')" class="btn btn-danger">Hapus</a>
+                                            <a href="<?php echo site_url('admin/delete_trans/'.$val->order_id);?>" onclick="return confirm('Yakin Akan Menghapus Data ini?')" class="btn btn-danger">Hapus</a>
                                         </div>
                                     </td>
                                 </tr>
